@@ -1,0 +1,8 @@
+prometheus相比其他监控工具的优势是轻量级、原生兼容kubernetes监控，prometheus总共有4个组成部分：
+监控系统：prometheus
+监控项：exporter
+报警系统：alertmanager
+报表系统：grafana
+prometheus自带页面展示。
+prometheus有四种监控类型，分别是1、计数器2、仪表盘3、直方图4、摘要
+

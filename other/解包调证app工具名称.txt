@@ -1,0 +1,4 @@
+抓包工具：Progress Telerik Fiddler Web Debugger、抓包精灵
+解包工具：jadx-gui 查找解包内容内的xml文件（如AndroidManifest.xml）
+提取安装包：安卓app-MT管理器 找到xml文件选择反编译
+通过抓包工具抓到的app访问的url可以直接使用浏览器打开并按F12查询调证API源厂商，如查看客服的源厂商。

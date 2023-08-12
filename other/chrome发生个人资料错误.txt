@@ -1,0 +1,7 @@
+发生个人资料错误
+
+1、按Windows键（键盘上田字图案按键）+r键，在运行框中输入：
+
+%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default
+
+在这个文件夹中找到Web Data文件，删除Web Data文件，再打开Chrome就不会出现报错了。

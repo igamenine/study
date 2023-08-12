@@ -1,0 +1,1 @@
+vim /var/spool/mail/root

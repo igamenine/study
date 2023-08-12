@@ -1,0 +1,1 @@
+现在有更好的解决方案，那就是通过docker安装Python镜像，如果想要本地安装联网条件下直接使用pip3 install cx_Oracle，离线条件下请参考https://www.cnblogs.com/kerrycode/p/11665926.html

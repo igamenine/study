@@ -1,0 +1,30 @@
+#!/bin/bash
+# by Xieqian
+# usage: 
+# 使用自己的配置文件与关键词批量执行
+# xqsync "free -g" /home/hosts.conf kafka
+# 使用/etc/hosts批量执行
+# xqsync "free -g"
+
+#判断参数个数
+if [ $# -lt 1 ]
+then
+  echo "请至少提供执行命令"
+  exit
+fi
+
+# 根据/etc/hosts遍历本机记录的所有主机
+if [ ! -n "$2" ];then
+    for file in `cat /etc/hosts | grep -v '127.0.0.1\|::1' | awk -F " " '{ print $1 }'`
+    do
+        echo ===== $file =====
+        ssh $file $1
+    done
+# 根据同目录配置文件(如host.conf)和关键词筛选遍历集群机器
+else
+    for file in `cat $2 | grep $3 | awk -F "#" '{ print $1 }'`
+    do
+        echo ===== $file =====
+        ssh $file $1
+    done
+fi

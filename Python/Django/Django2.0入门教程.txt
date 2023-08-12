@@ -1,0 +1,23 @@
+在联网环境下可以直接通过pip3 install Django[==版本号]安装Django，如果是在离线环境下则需要使用以下方法，转自https://www.django.cn/course/show-1.html
+
+安装Django之前我们需要做好如下准备：
+
+一、搭建虚拟环境。
+
+当我们需要运行多个不同软件版本项目，且每个项目的依赖需求也不一样，这时候怎么我们就需要搭建虚拟环境。Virtualenv是一个强大的Python虚拟环境工具，它能够建立多个相互独立，互不影响的Python工作环境。
+
+点击查看：Virtualenv安装使用方法
+
+二、安装数据库软件
+
+Django支持多种类型的数据库，根据自己的需求，安装适合自己的即可。本教程主要以Mysql做为示例。
+
+点击查看：Ubuntu下安装Mysql、Centos下安装Mysql、Windows下安装Mysql
+
+三、安装Python解释器
+
+Django2.0之后不再支持Python2的版本，所以我们需要安装Python3.6。
+
+四、安装代码编辑器(IDE)
+
+市面上好用的编辑工具不少，新手的话，在这里主要是向大家推荐两款：VScode和Pycharm。这两款软件都支持跨平台操作。有其它语言基础的朋友，使用自己习惯的编辑器就好。本教程之后都以Pycharm做为示范。

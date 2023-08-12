@@ -1,0 +1,1 @@
+alter table ORDER_HISTORY truncate partition p1;

@@ -1,0 +1,4 @@
+点击Split，选择分屏数（一般为2个，就是【2 terminals mode (vertical split)】），
+点击默认的【home】，可以切换成自己想要的终端。
+图文参考：
+https://jingyan.baidu.com/article/915fc414dab5de10384b206e.html

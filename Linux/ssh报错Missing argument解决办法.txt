@@ -1,0 +1,2 @@
+vim /etc/ssh_config
+将User ""改成User "root"

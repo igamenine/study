@@ -1,0 +1,1 @@
+setting>SSH>sessions setting>勾选ssh Keepalive

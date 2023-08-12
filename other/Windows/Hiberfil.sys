@@ -1,0 +1,1 @@
+管理员cmd命令窗口中输入：powercfg -h off，就可关闭休眠功能，同时hiberfil.sys 休眠文件也会自动删除。

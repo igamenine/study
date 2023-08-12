@@ -1,0 +1,1 @@
+REPAIR TABLE [表名]; 

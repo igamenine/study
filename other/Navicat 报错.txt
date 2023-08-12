@@ -1,0 +1,13 @@
+Navicat 提示 Access violation at address ***(如004ECCF4） in module ‘navicat.exe’. Read of address ***(如00000048）
+
+ 
+
+问题显示如下图所示：
+
+
+
+解决：这是内存越界的问题，需要重新注册Windows的动态链接库。方法如下：
+
+运行 -> cmd，然后在命令行中输入：for %1 in (%windir%\system32\*.dll) do regsvr32.exe /s %1 ，最后回车运行，问题得以解决。显示如下：
+
+转自https://blog.csdn.net/yanjiangdi/article/details/81318241

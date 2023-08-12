@@ -1,0 +1,4 @@
+不同的Oracle版本使用不同的驱动ojdbc.jar，平时能经常接触到的Oracle版本是11g，使用ojdbc6，下载地址为：
+https://www.oracle.com/cn/database/technologies/enterprise-edition/jdbc.html
+注意不要和其他版本的驱动一起使用，只选择一个就行。
+最新版本的Navicat自带驱动库，以前的版本使用dll文件，这种问题会发生在DBeaver上。

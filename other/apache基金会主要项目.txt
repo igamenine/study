@@ -1,0 +1,298 @@
+*1 Apache Http Server(httpd)
+apache最早的开源项目，用于部署静态web网站的服务器应用，如果要部署动态web网站，需要结合其他后端开发语言使用（比如php），或者使用Nginx、Tomcat作为动态web网站的服务器应用。
+
+*2 Apache Tomcat
+支持java而设计的动态web网站服务器应用，是java生态中最主流的应用服务器。
+
+3 Apache Commons
+Java公共组件开发包、类库、核心API。
+
+4 Apache POI
+针对Microsoft Office 格式档案读写处理的Java类库，如：Excel、Word、PowerPoint 等文件的读写。
+
+5 Apache HttpComponents
+提供了 HTTP 和相关协议的一系列 Java 组件和工具集，包括：HttpCore、HttpClient、HttpAsyncClient 三个组件。
+
+*6 Apache logging services
+Apache 日志服务，Log4j日志框架就是属于这个项目。
+
+7 Apache Ant
+一个比较老的 Java 项目编译和构建工具，已经被 Maven/ Gradle 替代。
+
+*8 Apache Maven
+现在最主流的软件项目管理工具之一，提供项目自动编译、单元测试、打包、发布等一系列生命周期的管理。
+
+*9 Apache Subversion(SVN)
+开源版本控制软件，代码版本控制、文件版本控制.
+
+10 Apache Dubbo
+它最初是由阿里巴巴开源的分布式服务框架（RPC），一段时间停止维护后，后来又重启维护并捐献给了 Apache 软件基金会。
+
+11 Apache Thrift
+是一款优秀的、非常轻量级的 RPC 框架，也是大名鼎鼎，最初由 Facebook 进行开发，后来捐献给了 Apache 软件基金会。
+
+*12 Apache Zookeeper
+是一个分布式中间件神器，是 Google Chubby 的一个开源实现，可用于做配置中心、分布式锁等，最主要一点是它可以用来支持高度可靠的分布式服务协调中间件。
+现在市面上的一些主流的开源项目都有 Zookeeper 的身影，如：Hadoop、Dubbo、Kafka、ElasticJob 等。
+
+13 Apache Curator
+是 ZooKeeper 的 Java 客户端，它包括一系列高级 API 和工具，简化了使用 ZooKeeper 的操作，可以更容易、可靠地使用 ZooKeeper。
+
+*14 Apache SkyWalking 
+是一个可观测性分析平台和应用性能管理系统，提供分布式跟踪、指标监控、性能诊断、度量汇总和可视化一体化的解决方案。
+
+*15 Apache ShardingSphere 
+是由一组分布式数据库中间件解决方案组成的开源生态系统，包括 3 个独立的产品：JDBC, Proxy & Sidecar (计划中)。
+它们都提供了数据分片、分布式事务和数据库编排功能，适用于 Java 同构、异构语言和云原生等多种场景。
+
+16 Apache Lucene 
+是一个顶级的开源搜索框架，包括一个核心搜索库：Lucene core，以及一个搜索服务器：Solr。
+
+17 Apache ActiveMQ 
+是一款灵活、强大的多协议开源消息中间件，支持 JMS 1.1 & 2.0，也是目前最流行的基于 Java 的消息中间件之一。
+它支持行业标准协议，所以用户可以跨广泛的语言和平台选择最合适的客户端，如 C、c++、Python、.net 等更多其他语言。
+
+*18 Apache RocketMQ 
+由阿里巴巴 2012 年开源的分布式消息中间件，也是一款轻量级的数据处理平台，2016 年捐赠给了 Apache 软件基金会，2017 年正式毕业。
+
+*19 Apache Kafka
+最初由 Linkedin 公司进行开发，后来捐献给了 Apache 软件基金会。
+它是一种分布式、高吞吐量的发布订阅消息系统（MQ），它的最大的特性就是，可以实时好处理大量数据以满足各种需求和业务场景。
+
+
+*20 Apache Hadoop 
+它是一种高可靠、可伸缩、分布式大数据处理框架，也是一套大数据行业公认的标准框架。
+成立于 2002 年，曾是 Apache Lucene 的子项目之一，2008 年正式成为 Apache 的顶级项目。
+Modules:
+Common,HDFS,YARN,MapReduce
+相关项目：
+Ambari,Avro,Cassandra,HBase,Hive,Mahout,Ozone,Pig,Spark,Submarine,Tez,Zookeeper
+
+*21 Apache HBase
+是一个建立在 Hadoop HDFS 的非关系数据库，以分布式、可扩展进行大数据存储，如果需要对大数据进行随机、实时的读写访问时，可以使用 Apache HBase。
+
+22 Apache Pig 
+是一个基于 Hadoop 的大数据分析平台，是 Map Reduce 的一个抽象，提供类似于 SQL 的面向数据流的 Pig Latin 高级语言。
+Pig Latin 提供了各种操作符，以及丰富的数据类型，从而可以很轻松地执行 Map Reduce 任务。
+
+*23 Apache Hive 
+是一个基于 Hadoop 的数据仓库工具，用来提取、转化和加载数据，它可以将 Hadoop 原始结构化数据映射为 Hive 中的一张表，并提供了类似 SQL 的 HiveQL 语言查询功能。
+
+*24 Apache Spark 
+是一个用于大规模数据处理的统一分析引擎，它也被认为是第二代大数据技术，第一代是基于 Hadoop 的 Map Reduce 模型。
+Apache Spark 它本身不会进行分布式数据的存储，所以它必须要集成其他的分布式文件系统才能工作，一船要与 Apache Hadoop 的 HDFS 结合使用，但这不是必须的，也可以选择其他的数据系统平台进行集成。
+
+*25 Apache Flink 
+是一个分布式处理引擎，用于无边界和有边界数据流上的有状态计算。Flink 被设计用于在所有常见的集群环境中运行，以内存速度和任何规模执行计算。
+*Spark与Flink的区别是前者擅长处理离线数据，后者擅长处理实时数据（误差微秒级）
+
+26 Apache Storm 
+是一个分布式实时计算系统，它能够轻松可靠地处理数据流，就像 Hadoop 那样进行实时批处理，并且可以与任何编程语言一起使用，而且使用起来非常方便。
+
+27 Apache Cassandra 
+是一款可伸缩、高可用、高性能去中心化的分布式数据库，当时是 Facebook 在 2007 年为了解决消息收件箱搜索问题而开始设计的，后来被转移到了 Apache 软件基金会成为顶级项目。
+
+28 Apache CouchDB 
+是一个面向文档的分布式数据库，它以 JSON 作为存储格式，JavaScript 作为查询语言，提供直观可靠的 Restful API 接口进行操作，最显著的特点就是支持多主复制。
+
+29 Apache Groovy 
+是一个功能十分强大的基于 JVM 平台的动态编程语言，语法与 Java 十分相似，并且兼容 Java，但 Groovy 要更简洁、优美，更易于学习，开发效率也非常高
+
+30 NetBeans 
+是一款老牌的开源开发工具（IDE），集成开发环境和应用框架，支持 Java, JavaScript, PHP 等更多编程语言，最初由 SUN 公司开发，后来被 Oracle 收购，再后来被 Oracle 捐献给了 Apache 软件基金会。
+
+
+本文参考：
+https://www.cnblogs.com/javastack/p/13468003.html
+https://www.jianshu.com/p/59095a8846ca
+
+补充：
+消息中间件，典型应用是kafka。
+批处理，一次性处理一批数据，离线处理，所以处理的一般是离线数据、历史数据。
+流处理，按照一定间隔或事件实时处理数据，一般适用于对实时数据进行处理与分析，如实时监控、实时报警、实时推荐等。
+有边界，指流处理数据在处理前有一个固定的起点和终点，即批量输入一段时间的数据进行处理，如每5分钟处理一次过去5分钟的数据。
+无边界，指流处理数据在处理前没有固定的起点和终点，即数据随时产生，随时处理，如实时日志分析和实时推荐等。
+
+
+其他更多：
+项目名称	官网主页	项目简述
+HTTP Server	http://httpd.apache.org/	Apache Web服务器（httpd）
+Abdera	http://abdera.apache.org/	Atom 发布协议实现
+Accumulo	http://accumulo.apache.org/	有序的分布式键值对存储
+ACE	http://ace.apache.org/	Centralized life cycle management and deployment of OSGi based and related modular software artifacts for distribution.
+ActiveMQ	http://activemq.apache.org/	分布式消息系统
+Airavata	http://airavata.apache.org/	工作流和计算任务管理中间件
+Allura	http://allura.apache.org/	软件项目托管
+Ambari	http://ambari.apache.org/	Hadoop集群管理
+Ant	http://ant.apache.org/	基于Java的构建工具
+Any23	http://any23.apache.org/	Anything to Triples
+Apex	http://apex.apache.org/	企业级统一流、批处理引擎
+APR	http://apr.apache.org/	Apache Portable Runtime libraries
+Archiva	http://archiva.apache.org/	Build Artifact Repository Manager
+Aries	http://aries.apache.org/	企业OSGi应用程序编程模型
+Arrow	http://arrow.apache.org/	Powering Columnar In-Memory Analytics
+AsterixDB	http://asterixdb.apache.org/	开源大数据管理系统
+Aurora	http://aurora.apache.org/	Mesos framework for long-running services and cron jobs
+Avro	http://avro.apache.org/	序列化系统
+Axis	http://axis.apache.org/	Java SOAP引擎
+Bahir	http://bahir.apache.org/	扩展到分布式分析平台，如Apache Spark
+Beam	http://beam.apache.org/	用于定义和执行数据处理管道的编程模型，SDK和运行程序
+Bigtop	http://bigtop.apache.org/	Apache Hadoop生态系统集成和分发项目
+Bloodhound	http://bloodhound.apache.org/	Issue tracking, wiki and repository browser
+BookKeeper	http://bookkeeper.apache.org/	可用于构建复制状态机的复制日志服务
+Brooklyn	http://brooklyn.apache.org/	通过自定义蓝图来实现建模、监控和管理应用程序的框架
+Buildr	http://buildr.apache.org/	简单直观的Java应用程序构建系统
+BVal	http://bval.apache.org/	Apache BVal：JSR-303 Bean验证实现和扩展
+Calcite	http://calcite.apache.org/	动态数据管理框架
+Camel	http://camel.apache.org/	基于Spring的集成框架，实现企业集成模式
+Cassandra	http://cassandra.apache.org/	高度可扩展的第二代分布式数据库
+Cayenne	http://cayenne.apache.org/	用户友好的Java ORM与工具
+Celix	http://celix.apache.org/	执行适用于C的OSGi规范
+Chemistry	http://chemistry.apache.org/	CMIS（内容管理互操作性服务）客户端和服务器
+Chukwa	http://chukwa.apache.org/	用于监控大型分布式系统的开源数据收集系统
+Clerezza	http://clerezza.apache.org/	OSGi的语义链接数据
+CloudStack	http://cloudstack.apache.org/	基础设施即服务解决方案
+Cocoon	http://cocoon.apache.org/	Web开发框架：分离关注点，基于组件
+Commons	http://commons.apache.org/	可重用的Java组件
+Cordova	http://cordova.apache.org/	使用HTML，CSS和JavaScript构建本机移动应用程序的平台
+CouchDB	http://couchdb.apache.org/	RESTful 的文档数据库
+Creadur	http://creadur.apache.org/	软件分发的理解和审计
+Crunch	http://crunch.apache.org/	简单高效的MapReduce管道
+cTAKES	http://ctakes.apache.org/	自然语言处理（NLP）工具，用于从电子医疗记录临床自由文本中提取信息
+Curator	http://curator.apache.org/	Java libraries that make using Apache ZooKeeper easier
+CXF	http://cxf.apache.org/	Service Framework
+DB	http://db.apache.org/	Database access
+DeltaSpike	http://deltaspike.apache.org/	Portable CDI extensions that provide useful features for Java application developers
+Directory	http://directory.apache.org/	Apache Directory Server
+Drill	http://drill.apache.org/	Schema-free SQL Query Engine for Apache Hadoop, NoSQL and Cloud Storage
+Eagle	http://eagle.apache.org/	开源分析解决方案，可在大数据平台上即时识别安全和性能问题
+Empire-db	http://empire-db.apache.org/	Relational Data Persistence
+Falcon	http://falcon.apache.org/	数据管理和处理平台
+Felix	http://felix.apache.org/	OSGi Framework and components.
+Flex	http://flex.apache.org/	Application framework for expressive web applications that deploy to all major browsers, desktops and devices.
+Flink	http://flink.apache.org/	platform for scalable batch and stream data processing
+Flume	http://flume.apache.org/	用于高效收集，聚合和移动大量日志数据的可靠服务
+Forrest	http://forrest.apache.org/	Aggregated multi-channel documentation, separation of concerns
+Geode	http://geode.apache.org/	低延迟，高并发数据管理解决方案
+Geronimo	http://geronimo.apache.org/	Java2, Enterprise Edition (J2EE) container
+Giraph	http://giraph.apache.org/	Iterative graph processing system built for high scalability
+Gora	http://gora.apache.org/	ORM framework for column stores such as Apache HBase and Apache Cassandra with a specific focus on Hadoop
+Groovy	http://groovy.apache.org/	A multi-faceted language for the Java platform
+Gump	http://gump.apache.org/	Continuous integration of open source projects
+Hadoop	http://hadoop.apache.org/	Distributed computing platform
+Hama	http://hama.apache.org/	a Bulk Synchronous Parallel computing framework on top of Apache Hadoop
+HBase	http://hbase.apache.org/	Apache Hadoop Database
+Helix	http://helix.apache.org/	A cluster management framework for partitioned and replicated distributed resources
+Hive	http://hive.apache.org/	Data warehouse infrastructure using the Apache Hadoop Database
+HttpComponents	http://hc.apache.org/	Java toolset of low level HTTP components
+Isis	http://isis.apache.org/	Framework for rapidly developing domain-driven apps in Java
+Ignite	http://ignite.apache.org/	High-performance, integrated and distributed in-memory platform for computing and transacting on large-scale data sets in real-time
+Jackrabbit	http://jackrabbit.apache.org/	Content Repository for Java
+James	http://james.apache.org/	Java Apache Mail Enterprise Server
+jclouds	http://jclouds.apache.org/	Java cloud APIs and abstractions
+Jena	http://jena.apache.org/	Java framework for building Semantic Web applications
+JMeter	http://jmeter.apache.org/	Java performance and functional testing
+JSPWiki	http://jspwiki.apache.org/	Leading open source WikiWiki engine, feature-rich and built around standard J2EE components (Java, servlets, JSP).
+Johnzon	http://johnzon.apache.org/	JSR-353 compliant JSON parsing; modules to help with JSR-353 as well as JSR-374 and JSR-367
+jUDDI	http://juddi.apache.org/	Java implementation of the Universal Description, Discovery, and Integration specification
+Kafka	http://kafka.apache.org/	Distributed publish-subscribe messaging system
+Karaf	http://karaf.apache.org/	Server-side OSGi distribution
+Knox	http://knox.apache.org/	Simplify and normalize the deployment and implementation of secure Hadoop clusters
+Kudu	http://kudu.apache.org/	A distributed columnar storage engine built for the Apache Hadoop ecosystem
+Kylin	http://kylin.apache.org/	Extreme OLAP Engine for Big Data
+Lens	http://lens.apache.org/	Unified analytics platform
+Libcloud	http://libcloud.apache.org/	Unified interface to the cloud
+Logging	http://logging.apache.org/	Cross-language logging services
+Lucene	http://lucene.apache.org/	Search engine library
+Lucene.Net	http://lucenenet.apache.org/	Search engine library targeted at .NET runtime users.
+Lucy	http://lucy.apache.org/	Search engine library for dynamic languages
+Mahout	http://mahout.apache.org/	Scalable machine learning library
+ManifoldCF	http://manifoldcf.apache.org/	Framework for connecting source content repositories to target repositories or indexes.
+Marmotta	http://marmotta.apache.org/	An Open Platform for Linked Data
+Maven	http://maven.apache.org/	Java project management and comprehension tools
+Mesos	http://mesos.apache.org/	a cluster manager that provides efficient resource isolation and sharing across distributed applications
+MetaModel	http://metamodel.apache.org/	common interface for discovery, exploration of metadata and querying of different types of data sources
+MINA	http://mina.apache.org/	Multipurpose Infrastructure for Network Application
+MyFaces	http://myfaces.apache.org/	JavaServer(tm) Faces implementation and components
+Nutch	http://nutch.apache.org/	Open Source Web Search Software
+Nifi	http://nifi.apache.org/	Easy to use, powerful, and reliable system to process and distribute data
+ODE	http://ode.apache.org/	Orchestration Director Engine: Business Process Management (BPM), Process Orchestration and Workflow through service composition.
+OFBiz	http://ofbiz.apache.org/	Open for Business: enterprise automation software
+Olingo	http://olingo.apache.org/	OASIS OData protocol libraries
+Oltu	http://oltu.apache.org/	OAuth protocol implementation in Java
+OODT	http://oodt.apache.org/	Object Oriented Data Technology (middleware metadata)
+Oozie	http://oozie.apache.org/	A workflow scheduler system to manage Apache Hadoop jobs.
+Open Climate Workbench	http://climate.apache.org/	Climate model evaluation
+OpenJPA	http://openjpa.apache.org/	OpenJPA: Object Relational Mapping for Java
+OpenMeetings	http://openmeetings.apache.org/	OpenMeetings: Web-Conferencing and real-time collaboration
+OpenNLP	http://opennlp.apache.org/	Machine learning based toolkit for the processing of natural language text
+OpenOffice	http://openoffice.apache.org/	An open-source, office-document productivity suite
+OpenWebBeans	http://openwebbeans.apache.org/	OpenWebBeans: JSR-299 Context and Dependency Injection for Java EE Platform Implementation
+ORC	http://orc.apache.org/	the smallest, fastest columnar storage for Hadoop workloads
+Parquet	http://parquet.apache.org/	columnar storage format available to any project in the Apache Hadoop ecosystem
+PDFBox	http://pdfbox.apache.org/	Java library for working with PDF documents
+Perl	http://perl.apache.org/	Dynamic websites using Perl
+Phoenix	http://phoenix.apache.org/	High performance relational database layer over Apache HBase for low latency applications
+Pig	http://pig.apache.org/	Platform for analyzing large data sets
+Pivot	http://pivot.apache.org/	Rich Internet applications in Java
+POI	http://poi.apache.org/	Java API for OLE 2 Compound and OOXML Documents
+Polygene	http://polygene.apache.org/	community based effort exploring Composite Oriented Programming for domain centric application development
+Portals	http://portals.apache.org/	Portal technology
+Qpid	http://qpid.apache.org/	Multiple language implementation of the latest Advanced Message Queuing Protocol (AMQP)
+Ranger	http://ranger.apache.org/	framework to enable, monitor and manage comprehensive data security across the Hadoop platform.
+REEF	http://reef.apache.org/	Retainable Evaluator Execution Framework
+River	http://river.apache.org/	Jini service oriented architecture
+Roller	http://roller.apache.org/	Java blog server
+Samza	http://samza.apache.org/	distributed stream processing framework
+Santuario	http://santuario.apache.org/	XML Security in Java and C++
+Sentry	http://sentry.apache.org/	Fine grained authorization to data and metadata in Apache Hadoop
+Serf	http://serf.apache.org/	High performance C-based HTTP client library built upon the Apache Portable Runtime (APR) library
+ServiceMix	http://servicemix.apache.org/	Enterprise Service Bus
+Shiro	http://shiro.apache.org/	Powerful and easy-to-use application security framework
+SIS	http://sis.apache.org/	Spatial Information System
+Sling	http://sling.apache.org/	Web Framework for JCR Content Repositories
+SpamAssassin	http://spamassassin.apache.org/	Mail filter to identify spam
+Spark	http://spark.apache.org/	Fast and general engine for large-scale data processing
+Sqoop	http://sqoop.apache.org/	Bulk Data Transfer for Apache Hadoop and Structured Datastores
+Stanbol	http://stanbol.apache.org/	Reusable components for semantic content management
+STeVe	http://steve.apache.org/	Apache's Python based single transferable vote software system
+Storm	http://storm.apache.org/	Distributed, real-time computation system
+Stratos	http://stratos.apache.org/	highly-extensible Platform-as-a-Service (PaaS) framework
+Struts	http://struts.apache.org/	Model 2 framework for building Java web applications
+Subversion	http://subversion.apache.org/	Version Control
+Synapse	http://synapse.apache.org/	Enterprise Service Bus and Mediation Framework
+Syncope	http://syncope.apache.org/	Managing digital identities in enterprise environments
+Tajo	http://tajo.apache.org/	Big data warehouse system on Apache Hadoop
+Tapestry	http://tapestry.apache.org/	Component-based Java Web Application Framework
+Tcl	http://tcl.apache.org/	Dynamic websites using TCL
+Tez	http://tez.apache.org/	High-performance and scalable distributed data processing framework
+Thrift	http://thrift.apache.org/	Framework for scalable cross-language services development
+Tika	http://tika.apache.org/	Content Analysis and Detection Toolkit
+Tiles	http://tiles.apache.org/	A templating framework for web application user interfaces
+Tinkerpop	http://tinkerpop.apache.org/	A graph computing framework for both graph databases (OLTP) and graph analytic systems (OLAP)
+Tomcat	http://tomcat.apache.org/	A Java Servlet and JSP Container
+TomEE	http://tomee.apache.org/	Java EE Web Profile built on Apache Tomcat
+Traffic Server	http://trafficserver.apache.org/	A fast, scalable and extensible HTTP/1.1 compliant caching proxy server
+Turbine	http://turbine.apache.org/	A Java Servlet Web Application Framework and associated component library
+Twill	http://twill.apache.org/	Use Apache Hadoop YARN's distributed capabilities with a programming model that is similar to running threads
+UIMA	http://uima.apache.org/	Framework and annotators for unstructured information analysis
+Usergrid	http://usergrid.apache.org/	The BaaS Framework you run
+VCL	http://vcl.apache.org/	Virtual Computing Lab
+Velocity	http://velocity.apache.org/	A Java Templating Engine
+VXQuery	http://vxquery.apache.org/	A parallel XQuery processor
+Web Services	http://ws.apache.org/	Projects related to Web Services
+Whimsy	http://whimsy.apache.org/	Tools that help automate various administrative tasks or information lookup activities
+Wicket	http://wicket.apache.org/	Component-based Java Web Application Framework.
+Wink	http://wink.apache.org/	RESTful Web services Framework
+Xalan	http://xalan.apache.org/	XSLT processors in Java and C++
+Xerces	http://xerces.apache.org/	XML parsers in Java, C++ and Perl
+XMLBeans	http://xmlbeans.apache.org/	XML-Java binding tool
+XML Graphics	http://xmlgraphics.apache.org/	Conversion from XML to graphical output
+Yetus	http://yetus.apache.org/	Collection of libraries and tools that enable contribution and release processes for software projects
+Zeppelin	http://zeppelin.apache.org/	A web-based notebook that enables interactive data analytics
+ZooKeeper	http://zookeeper.apache.org/	集中服务用于维护配置信息
+
+作者：翼徳
+链接：https://www.jianshu.com/p/59095a8846ca
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

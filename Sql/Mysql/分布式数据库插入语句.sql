@@ -1,0 +1,1 @@
+Insert global into 表A(col2,col3) select col2,col3 from 表B

@@ -1,0 +1,56 @@
+groups:
+    - name: 主机状态-监控告警
+      rules:
+      - alert: 主机失联
+        expr: up == 0
+        for: 5m
+        labels:
+          status: 非常严重
+        annotations:
+          summary: "{{$labels.instance}}:服务器宕机"
+          description: "{{$labels.instance}}:服务器超过5分钟无法连接"
+      
+      - alert: CPU使用率过高
+        expr: 100-(avg(irate(node_cpu_seconds_total{mode="idle"}[5m])) by(instance,company,ownningsystem)* 100) > 90
+        for: 30m
+        labels:
+          status: 一般告警
+        annotations:
+          summary: "{{$labels.mountpoint}} CPU使用率过高！"
+          description: "{{$labels.mountpoint }} CPU使用大于90%(目前使用:{{humanize  $value}}%)"
+  
+      - alert: 内存使用率过高
+        expr: 100 -(node_memory_MemTotal_bytes -node_memory_MemFree_bytes+node_memory_Buffers_bytes+node_memory_Cached_bytes ) / node_memory_MemTotal_bytes * 100> 85
+        for: 30m
+        labels:
+          status: 严重告警
+        annotations:
+          summary: "{{$labels.mountpoint}} 内存使用率过高！"
+          description: "{{$labels.mountpoint }} 内存使用大于85%(目前使用:{{humanize $value}}%)"
+ 
+      - alert: 磁盘分区使用率过高
+        expr: 100-(node_filesystem_free_bytes{fstype=~"ext4|xfs"}/node_filesystem_size_bytes {fstype=~"ext4|xfs"}*100) > 85
+        for: 1m
+        labels:
+          status: 严重告警
+        annotations:
+          summary: "{{$labels.mountpoint}} 磁盘分区使用率过高！"
+          description: "{{$labels.mountpoint }} 磁盘分区使用大于85%(目前使用:{{humanize $value}}%)"
+
+      - alert: 主机重启
+        expr: sum(time() - node_boot_time_seconds)by(instance,company,ownningsystem)/60/60 <= 12
+        for: 1m
+        labels:
+          status: 非常严重
+        annotations:
+          summary: "{{$labels.mountpoint}} 主机重启"
+          description: "{{$labels.mountpoint }} 主机在过去12h内发生重启，请确认业务是否正常！(重启后已运行时间：{{humanize $value}}h)"
+
+      - alert: 时间同步异常
+        expr: min_over_time(node_timex_sync_status[5m]) == 0 and node_timex_maxerror_seconds >= 16
+        for: 5m
+        labels:
+          status: 非常严重
+        annotations:
+          summary: "{{$labels.instance}}:时间同步出现问题"
+          description: "{{$labels.instance}}:时间同步服务异常"

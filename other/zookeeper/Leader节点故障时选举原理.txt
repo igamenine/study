@@ -1,0 +1,8 @@
+当Leader节点故障时，zookeeper服务集群会重新选举Leader，
+选举原理为比较SID（服务器ID）、ZXID（事务ID）、Epoch（任期代号）3个变量的值大小。
+比较先后优先级为：
+1、Epoch大的胜出；
+2、ZXID大的胜出；
+3、SID大的胜出。
+
+注：zookeeper选举Leader的方式先来后到，如果已经有Leader，那么扩展节点或者节点恢复正常后将不会再次选举，这也适用于先后启动zookeeper的情况。

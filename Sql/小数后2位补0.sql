@@ -1,0 +1,1 @@
+concat(if((if(ifnull(, 0)=0, ifnull(, 0)*100, ifnull(ROUND(IFNULL(, 0)/IFNULL(, 0)*100, 2), '0.00')))=0, '0.00', (if(ifnull(, 0)=0, ifnull(, 0)*100, ifnull(ROUND(IFNULL(, 0)/IFNULL(, 0)*100, 2), '0.00')))), '%')

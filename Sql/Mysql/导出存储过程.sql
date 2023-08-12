@@ -1,0 +1,1 @@
+mysqldump -R -ndt dbname -u root -p > xxx.sql

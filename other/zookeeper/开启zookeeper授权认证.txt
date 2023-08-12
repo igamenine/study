@@ -1,0 +1,28 @@
+1、修改文件 zoo.cfg， 开启认证功能
+authProvider.1=org.apache.zookeeper.server.auth.SASLAuthenticationProvider  #开启认证功能
+requireClientAuthScheme=sasl   #认证方式为sasl
+jaasLoginRenew=3600000
+
+2、在zookeeper的安装路径创建 jaas.conf文件，配置认证的用户和密码
+Server {
+  org.apache.zookeeper.server.auth.DigestLoginModule required
+  user_admin="password"
+  user_kafka="password";
+};
+
+3、设置jaas.conf的权限，权限是 zookeeper 组件的用户，假设组件zookeeper的拥有使用者名为 zkp，所需组为root
+sudo chown root:zkp /etc/zookeeper/jaas.conf
+sudo chmod 640 /etc/zookeeper/jaas.conf
+
+4、更新zookeeper的JVM flags
+JVMFLAGS="-Djava.security.auth.login.config=/etc/zookeeper/jaas.conf -Dzookeeper.allowSaslFailedClients=false"
+
+5、重启zookeeper
+#停止
+[zookeeper安装路径]/bin/zkServer.sh stop
+#启动
+[zookeeper安装路径]/bin/zkServer.sh start
+
+转自：
+https://blog.csdn.net/zhang5324496/article/details/111474084
+其中有「如何配置kafka对zookeeper的身份认证」的详细步骤，如果需要请前往阅读。

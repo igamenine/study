@@ -1,0 +1,1 @@
+find . -type f -name "qbxt_*" -size +500M -exec du -sh {} \;

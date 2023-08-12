@@ -1,0 +1,74 @@
+case
+when left(is18w(jszh), 2)  = 11 then '北京市'
+when left(is18w(jszh), 2)  = 12 then '天津市'
+when left(is18w(jszh), 2)  = 13 then '河北省'
+when left(is18w(jszh), 2)  = 14 then '山西省'
+when left(is18w(jszh), 2)  = 15 then '内蒙古自治区'
+when left(is18w(jszh), 2)  = 21 then '辽宁省'
+when left(is18w(jszh), 2)  = 22 then '吉林省'
+when left(is18w(jszh), 2)  = 23 then '黑龙江省'
+when left(is18w(jszh), 2)  = 31 then '上海市'
+when left(is18w(jszh), 2)  = 32 then '江苏省'
+when left(is18w(jszh), 2)  = 33 then '浙江省'
+when left(is18w(jszh), 2)  = 34 then '安徽省'
+when left(is18w(jszh), 2)  = 35 then '福建省'
+when left(is18w(jszh), 2)  = 36 then '江西省'
+when left(is18w(jszh), 2)  = 37 then '山东省'
+when left(is18w(jszh), 2)  = 41 then '河南省'
+when left(is18w(jszh), 2)  = 42 then '湖北省'
+when left(is18w(jszh), 2)  = 43 then '湖南省'
+when left(is18w(jszh), 2)  = 44 then '广东省'
+when left(is18w(jszh), 2)  = 45 then '广西壮族自治区'
+when left(is18w(jszh), 2)  = 46 then '海南省'
+when left(is18w(jszh), 2)  = 50 then '重庆市'
+when left(is18w(jszh), 2)  = 51 then '四川省'
+when left(is18w(jszh), 2)  = 52 then '贵州省'
+when left(is18w(jszh), 2)  = 53 then '云南省'
+when left(is18w(jszh), 2)  = 54 then '西藏自治区'
+when left(is18w(jszh), 2)  = 61 then '陕西省'
+when left(is18w(jszh), 2)  = 62 then '甘肃省'
+when left(is18w(jszh), 2)  = 63 then '青海省'
+when left(is18w(jszh), 2)  = 64 then '宁夏回族自治区'
+when left(is18w(jszh), 2)  = 65 then '新疆维吾尔自治区'
+when left(is18w(jszh), 2)  = 71 then '台湾省'
+when left(is18w(jszh), 2)  = 81 then '香港特别行政区'
+when left(is18w(jszh), 2)  = 82 then '澳门特别行政区'
+else '其他' end
+
+
+case
+when left(is18w(jszh), 2)  = 11 then 1
+when left(is18w(jszh), 2)  = 12 then 2
+when left(is18w(jszh), 2)  = 13 then 3
+when left(is18w(jszh), 2)  = 14 then 4
+when left(is18w(jszh), 2)  = 15 then 5
+when left(is18w(jszh), 2)  = 21 then 6
+when left(is18w(jszh), 2)  = 22 then 7
+when left(is18w(jszh), 2)  = 23 then 8
+when left(is18w(jszh), 2)  = 31 then 9
+when left(is18w(jszh), 2)  = 32 then 10
+when left(is18w(jszh), 2)  = 33 then 11
+when left(is18w(jszh), 2)  = 34 then 12
+when left(is18w(jszh), 2)  = 35 then 13
+when left(is18w(jszh), 2)  = 36 then 14
+when left(is18w(jszh), 2)  = 37 then 15
+when left(is18w(jszh), 2)  = 41 then 16
+when left(is18w(jszh), 2)  = 42 then 17
+when left(is18w(jszh), 2)  = 43 then 18
+when left(is18w(jszh), 2)  = 44 then 19
+when left(is18w(jszh), 2)  = 45 then 20
+when left(is18w(jszh), 2)  = 46 then 21
+when left(is18w(jszh), 2)  = 50 then 22
+when left(is18w(jszh), 2)  = 51 then 23
+when left(is18w(jszh), 2)  = 52 then 24
+when left(is18w(jszh), 2)  = 53 then 25
+when left(is18w(jszh), 2)  = 54 then 26
+when left(is18w(jszh), 2)  = 61 then 27
+when left(is18w(jszh), 2)  = 62 then 28
+when left(is18w(jszh), 2)  = 63 then 29
+when left(is18w(jszh), 2)  = 64 then 30
+when left(is18w(jszh), 2)  = 65 then 31
+when left(is18w(jszh), 2)  = 71 then 32
+when left(is18w(jszh), 2)  = 81 then 33
+when left(is18w(jszh), 2)  = 82 then 34
+else 999 end

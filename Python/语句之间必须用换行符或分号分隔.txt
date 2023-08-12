@@ -1,0 +1,3 @@
+这种报错一般是语法错误，括号没加，比如说打印print的文本没加括号导致报错，如print str[0:3]则会报错，加上括号就不会了print (str[0:3])
+报错原文是：
+Statements must be separated by newlines or semicolonsPylance

@@ -1,0 +1,2 @@
+通过设置菜单 或者 快捷键 【Ctrl+,】 打开 Vs Code 的设置面板，将通用设置【Commonly Used】中的 【Tab Size】改为：2
+图文参考https://zhuanlan.zhihu.com/p/456275765

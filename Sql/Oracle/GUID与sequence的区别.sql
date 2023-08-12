@@ -1,0 +1,1 @@
+GUID与sequence都是Oracle中经常用来生成主键的方案，GUID随机生成唯一值，sequence根据规则自增整数，GUID使用SYS_GUID()生成，sequence创建序列参数使用.nextval得到id。

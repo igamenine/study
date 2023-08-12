@@ -1,0 +1,6 @@
+1、下载所需要的额外版本的chrome离线安装包
+2、将安装包用压缩软件打开并解压出里面的chrome.7z
+3、对chrome.ext右键创建快捷方式
+4、右键快捷方式属性更改，在【目标】一栏添加--user-data-dir参数，填写你解压路径+user-data，如：
+--user-data-dir="C:\Users\xhm\Desktop\Chrome-bin\user-data"
+具体参考https://www.jianshu.com/p/ce848fd3674e

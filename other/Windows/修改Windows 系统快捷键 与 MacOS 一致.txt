@@ -1,0 +1,16 @@
+1、安装autohotkey
+https://www.autohotkey.com/
+2、右键桌面新建AutoHotKey Script，重命名成macos.ank
+3、使用记事本或vscode等文本编辑器打开新建的ahk文件
+4、使用相同目录下macos.ahk
+5、关闭文件，双击它
+
+此方法不会影响默认的快捷键配置，每次开机需要手动执行配置文件
+更多配置方法请参考https://www.autoahk.com/help/autohotkey/zh-cn/docs/Tutorial.htm#s12
+
+符号	描述
+#	Win(Windows 徽标键)
+!	Alt
+^	Ctrl
++	Shift
+&	用于连接两个按键(含鼠标按键) 合并成一个自定义热键.

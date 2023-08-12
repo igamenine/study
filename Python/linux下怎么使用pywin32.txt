@@ -1,0 +1,1 @@
+linux不支持pywin32，可以安装wine或者虚拟机，再使用pywin32

@@ -1,0 +1,3 @@
+-- 平均数 人均数
+ROUND(IFNULL(,0)/IFNULL(,0),2)
+if(IFNULL(,0)=0, 0, ROUND(IFNULL(,0)/IFNULL(,0),2))

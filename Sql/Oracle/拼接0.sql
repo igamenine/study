@@ -1,0 +1,1 @@
+select decode(substr(num,1,1),'.','0'||num,num) from table_name

@@ -1,0 +1,1 @@
+alter table history_uint drop partition p201812050000;

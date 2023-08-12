@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+
+
+<configuration>
+
+<property>
+  <name>yarn.resourcemanager.webapp.address</name>
+  <value>${yarn.resourcemanager.hostname}:8088</value>
+  <description>yarn网页端地址    
+  </description>
+  </property>
+
+<property>
+  <name>yarn.nodemanager.aux-services</name>
+  <value>mapreduce_shuffle</value>
+  <description>指定MapReduce数据重组方式，默认是shuffle。
+  </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.hostname</name>
+  <value>hadoop103</value>
+  <description>指定ResourceManager的地址
+  </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.env-whitelist</name>
+  <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
+  <description>系统环境变量继承。hadoop3.2版本后配置项消失，因为变量会自动继承无需配置
+  </description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation-enable</name>
+  <value>true</value>
+  <description>日志聚集功能开关
+  </description>
+</property>
+
+<property>
+  <name>yarn.log.server.url</name>
+  <value>http://hadoop102:19888/jobhistory/logs</value>
+  <description>设置日志聚集服务器地址
+  </description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.retain</name>
+  <value>604800</value>
+  <description>设置日志保留时间
+  </description>
+</property>
+
+</configuration>

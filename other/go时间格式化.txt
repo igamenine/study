@@ -1,0 +1,4 @@
+go语言时间格式化直接使用如下字符串
+2006-01-02 15:04:05
+这个类似于传统的yyyy-mm-dd hh24:mi:ss
+图文参考https://www.jianshu.com/p/c7f7fbb16932

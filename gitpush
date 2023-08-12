@@ -1,0 +1,19 @@
+#!/bin/bash
+
+git add .
+ndate=`date +"%Y%m%d"`
+if [ $# -lt 1 ];then
+    git commit -m $ndate
+else
+    git commit -m $1
+fi
+git push -u origin main
+
+
+要用git命令创建仓库并提交代码，您可以参考以下步骤：
+
+1. 在项目目录下，输入 `git init` 命令，创建一个空的git仓库²⁴。
+2. 输入 `git add .` 命令，将所有改动的代码提交到暂存区中¹³。
+3. 输入 `git commit -m '注释信息'` 命令，将代码提交到本地仓库，并添加注释²⁴⁶。
+4. 输入 `git remote add origin 远程仓库地址` 命令，将本地仓库与远程仓库关联¹³⁶。
+5. 输入 `git push origin master` 命令，将本地代码推送到远程仓库中¹³。

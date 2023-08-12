@@ -1,0 +1,1 @@
+ls /home/scsinstall/0917/scsdb_2.16.03|grep tar.gz|awk '{print "tar -zxvf "$1}'|sh

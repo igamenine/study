@@ -1,0 +1,1 @@
+Alter system set sudit_trail=NONE scope=spfile;

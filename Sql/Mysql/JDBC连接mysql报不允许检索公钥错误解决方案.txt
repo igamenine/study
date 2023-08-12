@@ -1,0 +1,8 @@
+错误原文：Public Key Retrieval is not allowed
+中文释义:不允许检索公钥
+
+解决方案：
+allowPublicKeyRetrieval=true
+
+出现场景：
+使用Dbeaver连接mysql时出现。

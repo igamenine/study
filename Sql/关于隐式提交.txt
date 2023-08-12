@@ -1,0 +1,16 @@
+提交事务commit在同一会话进程内是统一的，无论提交方式、提交位置在哪里。
+
+隐式提交触发语句
+1、正常执行完DDL语句。包括create，alter，drop，truncate，rename。
+
+2、正常执行完DCL语句。包括grant，revoke。
+
+3、正常退出数据库管理软件，没有明确发出commit或者rollback。
+
+除了基本的查询语句与增删改的对表的操纵语句外基本都是隐式提交的，使用时要注意。
+
+转自https://www.jianshu.com/p/f2d33bb1a602
+
+第一个使用 begin 开始事务，插入表 aaa 后使用 rollback 进行回滚，结果表 aaa 仍然创建成功。
+
+第二个使用 begin 开始事务，在表 mst_class 中插入数据但未提交，后接一个删除表 aaa 的操作，然后再向表 mst_class 中插入数据也未提交。结果是外面进行查询时可以看到第一个插入的数据但看不到第二个插入的数据。

@@ -1,0 +1,3 @@
+打开vscode后ctrl+shift+p搜索open user settings
+ctrl+f搜索wrap
+找到editor:word wrap后改为on即可开启自动换行

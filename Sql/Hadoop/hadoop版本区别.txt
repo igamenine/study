@@ -1,0 +1,10 @@
+hadoop1.x:
+MapReduce(同时负责计算与资源调度)、HDFS(数据存储)、Common(辅助工具)；
+
+
+hadoop2.x:
+MapReduce(计算)、Yarn(资源调度)、HDFS(数据存储)、Common(辅助工具)——注意，2.x将MapReduce拆分出Yarn负责资源调度，这是于1.x的区别；
+
+hadoop3.x:
+MapReduce(计算)、Yarn(资源调度)、HDFS(数据存储)、Common(辅助工具)；
+Namenode可以配子Namenode；

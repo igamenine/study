@@ -1,0 +1,35 @@
+global:
+  resolve_timeout: 5m
+  smtp_smarthost: 'smtp.qq.com:465'
+  smtp_from: '617545297@qq.com'
+  smtp_auth_username: '617545297@qq.com'
+  smtp_auth_password: ''
+  smtp_require_tls: false
+
+#1、模板
+templates:
+  - '/etc/alertmanager/template/alert.tmpl'
+ 
+#2、路由
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 1m
+  repeat_interval: 12h
+  receiver: 'email'
+  
+receivers:
+  - name: 'email'
+    email_configs:
+  ## 接收警报的email（这里是引用模板文件中定义的变量）
+    - to: '{{ template "email.to"}}'
+  ## 发送邮件的内容（调用模板文件中的）
+      html: '{{ template "email.to.html" .}}'
+      send_resolved: true
+  
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'dev', 'instance']

@@ -1,0 +1,22 @@
+要使用Oracle Instant Client zip文件运行ODPI-C应用程序：
+1.	下载Oracle 19、18、12或11.2“ Basic”或“ Basic Light” zip文件：64位 或32位，与您的应用程序的64位或32位体系结构匹配。
+2.	将软件包解压缩到应用程序可访问的目录中。例如：
+3.	mkdir -p /opt/oracle
+4.	cd /opt/oracle
+5.	unzip instantclient-basic-linux.x64-19.6.0.0.0dbru.zip
+6.	libaio以sudo或以root用户身份安装操作系统软件包。例如：
+7.	sudo yum install libaio
+在某些Linux发行版中，此软件包被称为libaio1。
+在最新的Linux版本（例如Oracle Linux 8）上，您可能还需要安装该libnsl软件包。
+8.	如果计算机上没有其他受影响的Oracle软件，则将Instant Client永久添加到运行时链接路径。例如，使用sudo或以root用户身份：
+9.	sudo sh -c "echo /opt/oracle/instantclient_19_6 > /etc/ld.so.conf.d/oracle-instantclient.conf"
+10.	sudo ldconfig
+或者，将环境变量设置LD_LIBRARY_PATH为Instant Client版本的适当目录。例如：
+export LD_LIBRARY_PATH=/opt/oracle/instantclient_19_6:$LD_LIBRARY_PATH
+11.	如果使用可选的Oracle配置文件，如tnsnames.ora， sqlnet.ora或者oraaccess.xml，将文件放在一个可访问目录。然后dpiContextCreateParams.oracleClientConfigDir在呼叫时 设置成员 dpiContext_createWithParams()。
+或者，将环境变量TNS_ADMIN设置为该目录名称。
+或者，创建一个network/adminInstant Client子目录（如果不存在）。例如：
+mkdir -p /opt/oracle/instantclient_19_6/network/admin
+将文件放在此目录中。这是与此即时客户端链接的应用程序的默认Oracle配置目录。
+摘自
+https://oracle.github.io/odpi/doc/installation.html#id1020

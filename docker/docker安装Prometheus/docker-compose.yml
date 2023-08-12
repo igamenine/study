@@ -1,0 +1,142 @@
+version: '3'
+
+networks:
+    monitor:
+        driver: bridge
+
+services:
+    prometheus:
+        image: prom/prometheus
+        container_name: prometheus
+        hostname: prometheus
+        restart: always
+        volumes:
+            - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+            - /etc/prometheus/rules:/etc/prometheus/rules
+        ports:
+            - "9090:9090"
+        networks:
+            - monitor
+
+    alertmanager:
+        image: prom/alertmanager
+        container_name: alertmanager
+        hostname: alertmanager
+        restart: always
+        volumes:
+            - /etc/prometheus/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+            - /etc/prometheus/alert.tmpl:/etc/alertmanager/template/alert.tmpl
+        ports:
+            - "9093:9093"
+        networks:
+            - monitor
+
+    grafana:
+        image: grafana/grafana
+        container_name: grafana
+        hostname: grafana
+        restart: always
+        environment:
+            - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-piechart-panel,grafana-polystat-panel
+            - TZ=Asia/Shanghai
+        volumes:
+            - /etc/prometheus/grafana-storage:/var/lib/grafana:rw
+        ports:
+            - "3000:3000"
+        user: 'root'
+        networks:
+            - monitor
+
+    pushgateway:
+        image: prom/pushgateway
+        container_name: pushgateway
+        hostname: pushgateway
+        restart: always
+        ports:
+            - "9091:9091"
+        networks:
+            - monitor
+
+    cadvisor:
+        image: google/cadvisor
+        container_name: cadvisor
+        hostname: cadvisor
+        restart: always
+        volumes:
+            - /:/rootfs:ro
+            - /var/run:/var/run:rw
+            - /sys:/sys:ro
+            - /var/lib/docker/:/var/lib/docker:ro
+        ports:
+            - "8080:8080"
+        networks:
+            - monitor
+
+    node-exporter:
+        image: prom/node-exporter
+        container_name: node-exporter
+        hostname: node-exporter
+        restart: always
+        volumes:
+            - /:/rootfs:ro
+            - /sys:/host/sys:ro
+            - /proc:/host/proc:ro
+        ports:
+            - "9100:9100"
+        networks:
+            - monitor
+
+    mysql:
+        image: mysql
+        container_name: mysql
+        hostname: mysql
+        restart: always
+        environment:
+            - MYSQL_ROOT_PASSWORD=my-secret-pw
+            - TZ=Asia/Shanghai
+        volumes:
+            - /etc/prometheus/mysql/conf:/etc/mysql/conf.d:rw
+            - /etc/prometheus/mysql/logs:/logs:rw
+            - /etc/prometheus/mysql/data:/var/lib/mysql:rw
+        ports:
+            - "3306:3306"
+        networks:
+            - monitor
+
+    mysqld-exporter:
+        image: prom/mysqld-exporter
+        container_name: mysqld-exporter
+        hostname: mysqld-exporter
+        restart: always
+        environment:
+            - DATA_SOURCE_NAME=root:my-secret-pw@(mysql:3306)/
+        ports:
+            - "9104:9104"
+        networks:
+            - monitor
+
+    oracle:
+        image: wnameless/oracle-xe-11g-r2:18.04-apex
+        container_name: oracle
+        hostname: oracle
+        restart: always
+        environment:
+            - TZ=Asia/Shanghai
+        # volumes:
+        #     - /etc/prometheus/oracle:/u01/app/oracle/oradata/XE:rw
+        ports:
+            - "1521:1521"
+        networks:
+            - monitor
+
+    oracledb-exporter:
+        image: iamseth/oracledb_exporter
+        container_name: oracledb-exporter
+        hostname: oracledb-exporter
+        restart: always
+        environment:
+            - DATA_SOURCE_NAME=system/oracle@//oracle/xe
+        ports:
+            - "9161:9161"
+        networks:
+            - monitor

@@ -1,0 +1,1 @@
+getconf LONG_BIT

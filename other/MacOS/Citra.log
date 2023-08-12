@@ -1,0 +1,666 @@
+CMake Warning (dev) at /opt/homebrew/Cellar/cmake/3.26.0/share/cmake/Modules/GNUInstallDirs.cmake:243 (message):
+  Unable to determine default CMAKE_INSTALL_LIBDIR directory because no
+  target architecture is known.  Please enable at least one language before
+  including GNUInstallDirs.
+Call Stack (most recent call first):
+  CMakeLists.txt:12 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is AppleClang 14.0.0.14000029
+-- The CXX compiler identification is AppleClang 14.0.0.14000029
+-- The ASM compiler identification is Clang with GNU-like command-line
+-- Found assembler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The OBJC compiler identification is AppleClang 14.0.0.14000029
+-- Detecting OBJC compiler ABI info
+-- Detecting OBJC compiler ABI info - done
+-- Check for working OBJC compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- LTO disabled
+-- Target architecture: ARM64
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for include file asm/types.h
+-- Looking for include file asm/types.h - not found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for include file linux/filter.h
+-- Looking for include file linux/filter.h - not found
+-- Looking for include file linux/netlink.h
+-- Looking for include file linux/netlink.h - not found
+-- Looking for include file poll.h
+-- Looking for include file poll.h - found
+-- Looking for include file signal.h
+-- Looking for include file signal.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of struct timespec
+-- Check size of struct timespec - failed
+-- Looking for syslog
+-- Looking for syslog - found
+-- Looking for include file syslog.h
+-- Looking for include file syslog.h - found
+-- Looking for include file sys/socket.h
+-- Looking for include file sys/socket.h - found
+-- Looking for include file sys/time.h
+-- Looking for include file sys/time.h - found
+-- Check size of nfds_t
+-- Check size of nfds_t - done
+-- Looking for include file sys/timerfd.h
+-- Looking for include file sys/timerfd.h - not found
+--  Found avcodec: /opt/homebrew/include /opt/homebrew/lib/libavcodec.dylib (version: 59.37.100)
+--  Found avdevice: /opt/homebrew/include /opt/homebrew/lib/libavdevice.dylib (version: 59.7.100)
+--  Found avfilter: /opt/homebrew/include /opt/homebrew/lib/libavfilter.dylib (version: 8.44.100)
+--  Found avformat: /opt/homebrew/include /opt/homebrew/lib/libavformat.dylib (version: 59.27.100)
+--  Found avutil: /opt/homebrew/include /opt/homebrew/lib/libavutil.dylib (version: 57.28.100)
+--  Found swresample: /opt/homebrew/include /opt/homebrew/lib/libswresample.dylib (version: 4.7.100)
+--  Found swscale: /opt/homebrew/include /opt/homebrew/lib/libswscale.dylib (version: 6.7.100)
+-- Found FFmpeg: /opt/homebrew/include  found components: avcodec 
+CMake Warning (dev) at externals/catch2/CMakeLists.txt:11 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'CATCH_INSTALL_DOCS'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at externals/catch2/CMakeLists.txt:12 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'CATCH_INSTALL_EXTRAS'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Target architecture: Aarch64
+CMake Warning (dev) at externals/dynarmic/CMakeLists.txt:42 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'DYNARMIC_TESTS'.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Module support is disabled.
+-- Version: 9.1.0
+-- Build type: Release
+-- CXX_STANDARD: 20
+-- Performing Test has_std_20_flag
+-- Performing Test has_std_20_flag - Success
+-- Performing Test has_std_2a_flag
+-- Performing Test has_std_2a_flag - Success
+-- Required features: cxx_variadic_templates
+-- Performing Test HAS_NULLPTR_WARNING
+-- Performing Test HAS_NULLPTR_WARNING - Success
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.9.6", minimum required is "3") 
+-- spirv-tools not linked - illegal SPIRV may be generated for HLSL
+-- GLM: Version 0.9.9.9
+-- Performing Test SOUNDTOUCH_HAS_MMMX
+-- Performing Test SOUNDTOUCH_HAS_MMMX - Success
+-- Performing Test SOUNDTOUCH_HAS_MSSE
+-- Performing Test SOUNDTOUCH_HAS_MSSE - Success
+-- Found PkgConfig: /opt/homebrew/bin/pkg-config (found version "0.29.2") 
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - not found
+-- Performing Test HAVE_GCC_WALL
+-- Performing Test HAVE_GCC_WALL - Success
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING - Success
+-- Performing Test HAVE_GCC_WDECLARATION_AFTER_STATEMENT
+-- Performing Test HAVE_GCC_WDECLARATION_AFTER_STATEMENT - Success
+-- Performing Test HAVE_GCC_WERROR_DECLARATION_AFTER_STATEMENT
+-- Performing Test HAVE_GCC_WERROR_DECLARATION_AFTER_STATEMENT - Success
+-- Performing Test HAVE_GCC_ATOMICS
+-- Performing Test HAVE_GCC_ATOMICS - Success
+-- Performing Test HAVE_GCC_PREFERRED_STACK_BOUNDARY
+-- Performing Test HAVE_GCC_PREFERRED_STACK_BOUNDARY - Failed
+-- Performing Test HAVE_GCC_FVISIBILITY
+-- Performing Test HAVE_GCC_FVISIBILITY - Success
+-- Performing Test HAVE_GCC_WSHADOW
+-- Performing Test HAVE_GCC_WSHADOW - Success
+-- Performing Test HAVE_MMX
+-- Performing Test HAVE_MMX - Failed
+-- Performing Test HAVE_3DNOW
+-- Performing Test HAVE_3DNOW - Failed
+-- Performing Test HAVE_SSE
+-- Performing Test HAVE_SSE - Failed
+-- Looking for immintrin.h
+-- Looking for immintrin.h - not found
+-- Performing Test HAVE_ALTIVEC_H_HDR
+-- Performing Test HAVE_ALTIVEC_H_HDR - Failed
+-- Performing Test HAVE_ALTIVEC
+-- Performing Test HAVE_ALTIVEC - Failed
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for malloc.h
+-- Looking for malloc.h - not found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for float.h
+-- Looking for float.h - found
+-- Looking for wchar.h
+-- Looking for wchar.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for ctype.h
+-- Looking for ctype.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for iconv.h
+-- Looking for iconv.h - found
+-- Looking for libunwind.h
+-- Looking for libunwind.h - found
+-- Looking for 7 include files stddef.h, ..., float.h
+-- Looking for 7 include files stddef.h, ..., float.h - found
+-- Looking for M_PI
+-- Looking for M_PI - found
+-- Performing Test HAVE_MPROTECT
+-- Performing Test HAVE_MPROTECT - Success
+-- Looking for strtod
+-- Looking for strtod - found
+-- Looking for malloc
+-- Looking for malloc - found
+-- Looking for calloc
+-- Looking for calloc - found
+-- Looking for realloc
+-- Looking for realloc - found
+-- Looking for free
+-- Looking for free - found
+-- Looking for getenv
+-- Looking for getenv - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for putenv
+-- Looking for putenv - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for bsearch
+-- Looking for bsearch - found
+-- Looking for qsort
+-- Looking for qsort - found
+-- Looking for abs
+-- Looking for abs - found
+-- Looking for bcopy
+-- Looking for bcopy - found
+-- Looking for memset
+-- Looking for memset - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for memmove
+-- Looking for memmove - found
+-- Looking for memcmp
+-- Looking for memcmp - found
+-- Looking for strlen
+-- Looking for strlen - found
+-- Looking for strlcpy
+-- Looking for strlcpy - found
+-- Looking for strlcat
+-- Looking for strlcat - found
+-- Looking for _strrev
+-- Looking for _strrev - not found
+-- Looking for _strupr
+-- Looking for _strupr - not found
+-- Looking for _strlwr
+-- Looking for _strlwr - not found
+-- Looking for index
+-- Looking for index - found
+-- Looking for rindex
+-- Looking for rindex - found
+-- Looking for strchr
+-- Looking for strchr - found
+-- Looking for strrchr
+-- Looking for strrchr - found
+-- Looking for strstr
+-- Looking for strstr - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Looking for itoa
+-- Looking for itoa - not found
+-- Looking for _ltoa
+-- Looking for _ltoa - not found
+-- Looking for _uitoa
+-- Looking for _uitoa - not found
+-- Looking for _ultoa
+-- Looking for _ultoa - not found
+-- Looking for strtol
+-- Looking for strtol - found
+-- Looking for strtoul
+-- Looking for strtoul - found
+-- Looking for _i64toa
+-- Looking for _i64toa - not found
+-- Looking for _ui64toa
+-- Looking for _ui64toa - not found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- Looking for atoi
+-- Looking for atoi - found
+-- Looking for atof
+-- Looking for atof - found
+-- Looking for strcmp
+-- Looking for strcmp - found
+-- Looking for strncmp
+-- Looking for strncmp - found
+-- Looking for _stricmp
+-- Looking for _stricmp - not found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for _strnicmp
+-- Looking for _strnicmp - not found
+-- Looking for strncasecmp
+-- Looking for strncasecmp - found
+-- Looking for wcscmp
+-- Looking for wcscmp - found
+-- Looking for _wcsdup
+-- Looking for _wcsdup - not found
+-- Looking for wcsdup
+-- Looking for wcsdup - found
+-- Looking for wcslcat
+-- Looking for wcslcat - found
+-- Looking for wcslcpy
+-- Looking for wcslcpy - found
+-- Looking for wcslen
+-- Looking for wcslen - found
+-- Looking for wcsncmp
+-- Looking for wcsncmp - found
+-- Looking for wcsstr
+-- Looking for wcsstr - found
+-- Looking for wcscasecmp
+-- Looking for wcscasecmp - found
+-- Looking for _wcsicmp
+-- Looking for _wcsicmp - not found
+-- Looking for wcsncasecmp
+-- Looking for wcsncasecmp - found
+-- Looking for _wcsnicmp
+-- Looking for _wcsnicmp - not found
+-- Looking for sscanf
+-- Looking for sscanf - found
+-- Looking for vsscanf
+-- Looking for vsscanf - found
+-- Looking for vsnprintf
+-- Looking for vsnprintf - found
+-- Looking for fopen64
+-- Looking for fopen64 - not found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for fseeko64
+-- Looking for fseeko64 - not found
+-- Looking for _Exit
+-- Looking for _Exit - found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for setjmp
+-- Looking for setjmp - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Looking for sysctlbyname
+-- Looking for sysctlbyname - found
+-- Looking for getauxval
+-- Looking for getauxval - not found
+-- Looking for elf_aux_info
+-- Looking for elf_aux_info - not found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for pow in m
+-- Looking for pow in m - found
+-- Looking for atan
+-- Looking for atan - found
+-- Looking for atan2
+-- Looking for atan2 - found
+-- Looking for atanf
+-- Looking for atanf - found
+-- Looking for atan2f
+-- Looking for atan2f - found
+-- Looking for ceil
+-- Looking for ceil - found
+-- Looking for ceilf
+-- Looking for ceilf - found
+-- Looking for copysign
+-- Looking for copysign - found
+-- Looking for copysignf
+-- Looking for copysignf - found
+-- Looking for cos
+-- Looking for cos - found
+-- Looking for cosf
+-- Looking for cosf - found
+-- Looking for exp
+-- Looking for exp - found
+-- Looking for expf
+-- Looking for expf - found
+-- Looking for fabs
+-- Looking for fabs - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for floor
+-- Looking for floor - found
+-- Looking for floorf
+-- Looking for floorf - found
+-- Looking for fmod
+-- Looking for fmod - found
+-- Looking for fmodf
+-- Looking for fmodf - found
+-- Looking for log
+-- Looking for log - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for log10
+-- Looking for log10 - found
+-- Looking for log10f
+-- Looking for log10f - found
+-- Looking for lround
+-- Looking for lround - found
+-- Looking for lroundf
+-- Looking for lroundf - found
+-- Looking for pow
+-- Looking for pow - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for round
+-- Looking for round - found
+-- Looking for roundf
+-- Looking for roundf - found
+-- Looking for scalbn
+-- Looking for scalbn - found
+-- Looking for scalbnf
+-- Looking for scalbnf - found
+-- Looking for sin
+-- Looking for sin - found
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for sqrt
+-- Looking for sqrt - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for tan
+-- Looking for tan - found
+-- Looking for tanf
+-- Looking for tanf - found
+-- Looking for acos
+-- Looking for acos - found
+-- Looking for acosf
+-- Looking for acosf - found
+-- Looking for asin
+-- Looking for asin - found
+-- Looking for asinf
+-- Looking for asinf - found
+-- Looking for trunc
+-- Looking for trunc - found
+-- Looking for truncf
+-- Looking for truncf - found
+-- Looking for iconv_open in iconv
+-- Looking for iconv_open in iconv - found
+-- Performing Test HAVE_SA_SIGACTION
+-- Performing Test HAVE_SA_SIGACTION - Success
+-- Looking for dlopen
+-- Looking for dlopen - found
+-- Performing Test HAVE_O_CLOEXEC
+-- Performing Test HAVE_O_CLOEXEC - Success
+-- Performing Test HAVE_FRAMEWORK_GAMECONTROLLER
+-- Performing Test HAVE_FRAMEWORK_GAMECONTROLLER - Success
+-- Performing Test HAVE_FRAMEWORK_COREHAPTICS
+-- Performing Test HAVE_FRAMEWORK_COREHAPTICS - Success
+-- Performing Test HAVE_PTHREADS
+-- Performing Test HAVE_PTHREADS - Success
+-- Performing Test HAVE_RECURSIVE_MUTEXES
+-- Performing Test HAVE_RECURSIVE_MUTEXES - Success
+-- Performing Test HAVE_PTHREADS_SEM
+-- Performing Test HAVE_PTHREADS_SEM - Success
+-- Performing Test HAVE_SEM_TIMEDWAIT
+-- Performing Test HAVE_SEM_TIMEDWAIT - Failed
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for include file pthread_np.h
+-- Looking for include file pthread_np.h - not found
+-- Performing Test HAVE_PTHREAD_SETNAME_NP
+-- Performing Test HAVE_PTHREAD_SETNAME_NP - Failed
+-- Found Git: /usr/bin/git (found version "2.37.1 (Apple Git-137.1)") 
+-- 
+-- SDL2 was configured with the following options:
+-- 
+-- Platform: Darwin-22.3.0
+-- 64-bit:   TRUE
+-- Compiler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Revision: https://github.com/brooksytech/citra-vulkan.git@5e50c2c104d59980c6bd9d27bd192bd72a593f10
+-- 
+-- Subsystems:
+--   Atomic:	ON
+--   Audio:	ON
+--   Video:	ON
+--   Render:	OFF
+--   Events:	ON
+--   Joystick:	ON
+--   Haptic:	OFF
+--   Hidapi:	ON
+--   Power:	OFF
+--   Threads:	ON
+--   Timers:	ON
+--   File:	ON
+--   Loadso:	ON
+--   CPUinfo:	OFF
+--   Filesystem:	OFF
+--   Sensor:	OFF
+--   Locale:	OFF
+--   Misc:	ON
+-- 
+-- Options:
+--   SDL2_DISABLE_INSTALL        (Wanted: ON): OFF
+--   SDL2_DISABLE_SDL2MAIN       (Wanted: OFF): OFF
+--   SDL2_DISABLE_UNINSTALL      (Wanted: OFF): OFF
+--   SDL_3DNOW                   (Wanted: ON): OFF
+--   SDL_ALSA                    (Wanted: OFF): OFF
+--   SDL_ALSA_SHARED             (Wanted: OFF): OFF
+--   SDL_ALTIVEC                 (Wanted: ON): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ARMSIMD                 (Wanted: OFF): OFF
+--   SDL_ARTS                    (Wanted: OFF): OFF
+--   SDL_ARTS_SHARED             (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: OFF): OFF
+--   SDL_COCOA                   (Wanted: ON): ON
+--   SDL_DIRECTFB                (Wanted: OFF): OFF
+--   SDL_DIRECTFB_SHARED         (Wanted: OFF): OFF
+--   SDL_DIRECTX                 (Wanted: OFF): OFF
+--   SDL_DISKAUDIO               (Wanted: OFF): OFF
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_ESD                     (Wanted: OFF): OFF
+--   SDL_ESD_SHARED              (Wanted: OFF): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND             (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND_SHARED      (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: ON): ON
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: OFF): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: OFF): OFF
+--   SDL_JACK_SHARED             (Wanted: OFF): OFF
+--   SDL_KMSDRM                  (Wanted: OFF): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBSAMPLERATE           (Wanted: OFF): OFF
+--   SDL_LIBSAMPLERATE_SHARED    (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): OFF
+--   SDL_NAS                     (Wanted: OFF): OFF
+--   SDL_NAS_SHARED              (Wanted: OFF): OFF
+--   SDL_OFFSCREEN               (Wanted: OFF): OFF
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: OFF): OFF
+--   SDL_PIPEWIRE_SHARED         (Wanted: OFF): OFF
+--   SDL_PTHREADS                (Wanted: ON): ON
+--   SDL_PTHREADS_SEM            (Wanted: ON): ON
+--   SDL_PULSEAUDIO              (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO_SHARED       (Wanted: OFF): OFF
+--   SDL_RENDER_D3D              (Wanted: OFF): OFF
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: OFF): OFF
+--   SDL_SNDIO_SHARED            (Wanted: OFF): OFF
+--   SDL_SSE                     (Wanted: ON): OFF
+--   SDL_SSE2                    (Wanted: OFF): OFF
+--   SDL_SSE3                    (Wanted: OFF): OFF
+--   SDL_SSEMATH                 (Wanted: OFF): OFF
+--   SDL_STATIC_PIC              (Wanted: OFF): OFF
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: OFF): OFF
+--   SDL_WASAPI                  (Wanted: OFF): OFF
+--   SDL_WAYLAND                 (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: OFF): OFF
+--   SDL_WAYLAND_QT_TOUCH        (Wanted: OFF): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: OFF): OFF
+--   SDL_X11                     (Wanted: OFF): OFF
+--   SDL_X11_SHARED              (Wanted: OFF): OFF
+--   SDL_X11_XCURSOR             (Wanted: OFF): OFF
+--   SDL_X11_XDBE                (Wanted: OFF): OFF
+--   SDL_X11_XFIXES              (Wanted: OFF): OFF
+--   SDL_X11_XINPUT              (Wanted: OFF): OFF
+--   SDL_X11_XRANDR              (Wanted: OFF): OFF
+--   SDL_X11_XSCRNSAVER          (Wanted: OFF): OFF
+--   SDL_X11_XSHAPE              (Wanted: OFF): OFF
+--   SDL_XINPUT                  (Wanted: OFF): OFF
+-- 
+--  CFLAGS:         -idirafter "/Users/igamenine/citra-vulkan/externals/sdl2/SDL/src/video/khronos"
+--  EXTRA_CFLAGS:   -Wall -fno-strict-aliasing -Werror=declaration-after-statement -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -D_THREAD_SAFE
+--  EXTRA_LDFLAGS: -Wl,-framework,CoreVideo;-Wl,-framework,Cocoa;-Wl,-framework,IOKit;-Wl,-framework,ForceFeedback;-Wl,-framework,Carbon;-Wl,-framework,CoreAudio;-Wl,-framework,AudioToolbox;-Wl,-framework,AVFoundation;-Wl,-framework,Foundation;-Wl,-weak_framework,GameController;-Wl,-weak_framework,CoreHaptics -Wl,-undefined,error;-Wl,-compatibility_version,1.0.0;-Wl,-current_version,2401.0.0
+--  EXTRA_LIBS:    m;iconv
+-- 
+--  Build Shared Library: ON
+--  Build Static Library: OFF
+-- 
+-- If something was not detected, although the libraries
+-- were installed, then make sure you have set the
+-- CFLAGS and LDFLAGS environment variables correctly.
+-- 
+-- ZSTD VERSION: 1.5.2
+-- Performing Test CXX_FLAG_STD_CPLUSPLUS11
+-- Performing Test CXX_FLAG_STD_CPLUSPLUS11 - Success
+-- Performing Test C_FLAG_STD_C99
+-- Performing Test C_FLAG_STD_C99 - Success
+-- Performing Test C_FLAG_WALL
+-- Performing Test C_FLAG_WALL - Success
+-- Performing Test CXX_FLAG_WALL
+-- Performing Test CXX_FLAG_WALL - Success
+-- Performing Test C_FLAG_WEXTRA
+-- Performing Test C_FLAG_WEXTRA - Success
+-- Performing Test CXX_FLAG_WEXTRA
+-- Performing Test CXX_FLAG_WEXTRA - Success
+-- Performing Test C_FLAG_WUNDEF
+-- Performing Test C_FLAG_WUNDEF - Success
+-- Performing Test CXX_FLAG_WUNDEF
+-- Performing Test CXX_FLAG_WUNDEF - Success
+-- Performing Test C_FLAG_WSHADOW
+-- Performing Test C_FLAG_WSHADOW - Success
+-- Performing Test CXX_FLAG_WSHADOW
+-- Performing Test CXX_FLAG_WSHADOW - Success
+-- Performing Test C_FLAG_WCAST_ALIGN
+-- Performing Test C_FLAG_WCAST_ALIGN - Success
+-- Performing Test CXX_FLAG_WCAST_ALIGN
+-- Performing Test CXX_FLAG_WCAST_ALIGN - Success
+-- Performing Test C_FLAG_WCAST_QUAL
+-- Performing Test C_FLAG_WCAST_QUAL - Success
+-- Performing Test CXX_FLAG_WCAST_QUAL
+-- Performing Test CXX_FLAG_WCAST_QUAL - Success
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES - Success
+-- CMAKE_INSTALL_PREFIX: /usr/local
+-- CMAKE_INSTALL_LIBDIR: lib
+-- ZSTD_LEGACY_SUPPORT not defined!
+-- ZSTD_MULTITHREAD_SUPPORT is enabled
+-- Looking for fcntl
+-- Looking for fcntl - found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for getnameinfo
+-- Looking for getnameinfo - found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - not found
+-- Looking for gethostbyaddr_r
+-- Looking for gethostbyaddr_r - not found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Performing Test HAS_MSGHDR_FLAGS
+-- Performing Test HAS_MSGHDR_FLAGS - Success
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Checking for module 'speexdsp'
+--   No package 'speexdsp' found
+-- Looking for include file pulse/pulseaudio.h
+-- Looking for include file pulse/pulseaudio.h - not found
+-- Looking for include file alsa/asoundlib.h
+-- Looking for include file alsa/asoundlib.h - not found
+-- Looking for include file jack/jack.h
+-- Looking for include file jack/jack.h - not found
+-- Looking for include file sndio.h
+-- Looking for include file sndio.h - not found
+-- Looking for include file aaudio/AAudio.h
+-- Looking for include file aaudio/AAudio.h - not found
+-- Looking for include file AudioUnit/AudioUnit.h
+-- Looking for include file AudioUnit/AudioUnit.h - found
+-- Looking for include file audioclient.h
+-- Looking for include file audioclient.h - not found
+-- Looking for include files windows.h, mmsystem.h
+-- Looking for include files windows.h, mmsystem.h - not found
+-- Looking for include file SLES/OpenSLES.h
+-- Looking for include file SLES/OpenSLES.h - not found
+-- Looking for include file sys/soundcard.h
+-- Looking for include file sys/soundcard.h - not found
+-- Looking for include file android/log.h
+-- Looking for include file android/log.h - not found
+-- Looking for include file sys/audioio.h
+-- Looking for include file sys/audioio.h - not found
+-- Looking for include file kai.h
+-- Looking for include file kai.h - not found
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Found OpenSSL: /opt/homebrew/opt/openssl/lib/libcrypto.dylib (found suitable version "3.1.0", minimum required is "1.1")  
+-- Configuring done (21.9s)
+-- Generating done (0.2s)
+-- Build files have been written to: /Users/igamenine/citra-vulkan/build

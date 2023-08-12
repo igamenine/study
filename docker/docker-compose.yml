@@ -1,0 +1,28 @@
+# 定义docker-compose.yml版本，可根据实际情况填写
+version: "3"
+
+services:
+  web:
+    # build: . #打包本地目录成镜像
+    image: username/testweb:v1 #可以拉取本地镜像 
+    ports:
+      - "80:5000"
+    enviroment:
+      - TZ-Asia/Shanghai
+  db:
+    image: "mysql"
+    environment:
+      MYSQL_DATABASE: finance-db
+      MYSQL_ROOT_PASSWORD: secret
+    volumes:
+      - my-finance-data:/var/lib/mysql
+  redis:
+    image: redis:5.0.13
+    volumes:
+      - redis:/data
+    enviroment:
+      - TZ-Asia/Shanghai
+
+# 全局挂载目录
+volumes:
+  my-finance-data:/var/lib/mysql

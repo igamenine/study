@@ -1,0 +1,41 @@
+auth:
+  # 设置root登录密码
+  rootPassword: "123456"
+
+# 设置mysql主从节点为复制模式
+architecture: replication
+
+
+# 主节点配置
+primary: 
+  # 使用持久卷声明启用持久性
+  persistence: 
+    # 如果为 true，则使用持久卷声明，如果为 false，则使用 emptyDir
+    enabled: true
+    size: 2Gi
+  # MySQL 主 Pod 安全上下文
+  podSecurityContext: 
+    enabled: false
+    fsGroup: 1001
+  # MySQL 主容器安全上下文
+  containerSecurityContext: 
+    enabled: false
+    runAsUser: 1001
+
+# 从节点配置
+secondary: 
+  # 设置从节点数量
+  replicaCount: 2
+  # 使用持久卷声明启用持久性
+  persistence: 
+    # 如果为 true，则使用持久卷声明，如果为 false，则使用 emptyDir
+    enabled: true
+    size: 2Gi
+  # MySQL 主 Pod 安全上下文
+  podSecurityContext: 
+    enabled: false
+    fsGroup: 1001
+  # MySQL 主容器安全上下文
+  containerSecurityContext: 
+    enabled: false
+    runAsUser: 1001

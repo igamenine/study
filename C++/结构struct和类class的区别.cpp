@@ -1,0 +1,6 @@
+1、struct和class声明关键字不同。
+2、struct和class最主要的区别是默认的成员访问权限不同，struct默认的访问权限是public，class默认的访问权限是private。
+3、struct和class对于继承的限制不同，struct只支持public继承，class支持public、protected、private继承。
+4、struct和class对于成员函数的限制不同，struct只能声明不能初始化成员函数，class可以声明并初始化成员函数。
+5、struct和class对于构造函数的态度不同，struct默认没有构造函数，class默认会生成一个构造函数。
+6、struct和class对于编译器的内存管理不同，struct在声明后便会分配存储空间，class则需要等程序new新对象才有存储空间。

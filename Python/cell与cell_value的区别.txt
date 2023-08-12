@@ -1,0 +1,2 @@
+cell(rowx, colx)和cell_value(rowx, colx)的区别
+cell()返回的是单元格的数据类型和单元格的值。cell_value()返回的只是单元格的值。

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>mapreduce.framework.name</name>
+  <value>yarn</value>
+  <description>指定MapReduce运行在Yarn上，由Yarn负责MR的资源调度。默认可以是本地local运行，但我们要改成Yarn。
+  </description>
+</property>
+
+<property>
+  <name>mapreduce.jobhistory.address</name>
+  <value>hadoop102:10020</value>
+  <description>历史服务器端地址，查看程序的历史运行情况。
+  </description>
+</property>
+
+<property>
+  <name>mapreduce.jobhistory.webapp.address</name>
+  <value>hadoop102:19888</value>
+  <description>历史服务器网页端地址。
+  </description>
+</property>
+
+</configuration>

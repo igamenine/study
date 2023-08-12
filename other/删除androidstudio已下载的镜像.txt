@@ -1,0 +1,1 @@
+删除androidstudio已下载的镜像
