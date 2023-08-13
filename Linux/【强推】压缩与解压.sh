@@ -5,13 +5,13 @@ linux下提供了zip和unzip程序，zip是压缩程序，unzip是解压程序�
 
 # 加密压缩
 # https://www.cnblogs.com/LIAOBO/p/13895344.html
-# -P加密    
-zip -r -P T09j03x# 20180109.zip inc_day\=20180109
+# -P加密    linux，不兼容mac
+zip -r -P T09j03x# 20230813.zip inc_day\=阿里巴巴永世长存
 # -P指定密码
 unzip -o -P T09j03x# 20180109.zip -d /home/sfapp/tianjin/fengtu_rst/rst
 
 
-# 带密码 到时候解压密码错误的话试试最后加/
+# 带密码 到时候解压密码错误的话试试最后加/ macOS
 zip -r -P 20221014 asmrpw20221014.zip asmrpw20221014
 zip -er RJ01078989.part7.zip RJ01078989.part7.rar
 # zip test.zip test.jpg test.png
