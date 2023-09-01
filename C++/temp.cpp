@@ -1,2 +1,7 @@
-类名<模板实例化参数类型> 对象名;
-类名<模板实例化参数类型> 对象名(构造函数实参列表);
+class Shape{
+  public:
+    virtual void draw() const = 0;
+    virtual void error(const char * msg);
+    int objectID() const;
+    ...
+};

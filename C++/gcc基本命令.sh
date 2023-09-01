@@ -8,7 +8,8 @@ g++ -o appname filename.cpp
 g++ -std=c++11 -o appname filename.cpp
 # 不允许优化，强制g++调用复制构造函数
 g++ -o appname -fno-elide-constructors filename.cpp
-# 生成o目标文件
-g++ -c filename.o
+# 生成o目标文件 
+g++ -c filename.cpp # 在当前目录生成
+g++ -c filename.cpp -o filename.o # 在指定目录生成
 # 通过目标文件编译可执行程序
 g++ -o appname filename1.o filename2.o
