@@ -1,0 +1,31 @@
+@startuml
+start
+' 单一流程
+:Hello world;
+:This is defind on 
+several **lines**;
+' 判断流程
+if (Graphviz installed?) then (yes)
+:process all\ndiagrams;
+else (no)
+:process only
+__sequence__ and __activity__ diagrams;
+endif
+' 注释
+:foo1;
+floating note left: 这是一个注释
+:foo2;
+note right
+这个注释是
+//多行的//, 同样可以
+包含 <b>HTML</b> 文本.
+====
+* 调用函数 ""foo()"" 是被禁止的。
+end note
+' 循环
+repeat
+:读取数据;
+:生成图片;
+repeat while (更多数据?)
+end
+@enduml

@@ -12,7 +12,7 @@ unzip -o -P T09j03x# 20180109.zip -d /home/sfapp/tianjin/fengtu_rst/rst
 
 
 # 带密码 到时候解压密码错误的话试试最后加/ macOS
-zip -r -P 20221014 asmrpw20221014.zip asmrpw20221014
+zip -r -P 20231008 ASMR20231008.zip ASMR
 zip -er RJ01078989.part7.zip RJ01078989.part7.rar
 # zip test.zip test.jpg test.png
 这条命令是将test.jpg和test.png压缩成一个zip包
