@@ -46,7 +46,7 @@ end note
 note left
 将**dwd_dmp_gid_ids_new**写入**dwd_dmp_gid_ids**。
 end note
-if(是否有事件表？) then (yes)
+if(是否有事实表？) then (yes)
 :治理出历史标准数据;
 note left
 按照gid

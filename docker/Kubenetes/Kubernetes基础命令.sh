@@ -41,6 +41,8 @@ kubectl logs -f mynginx
 # 查看pod属性
 # 可以检查Containers参数查看其使用到的容器信息
 kubectl describe pod [pod_name]
+# 查看node属性
+kubectl describe node [node_name]
 # 查看default中的pod节点信息
 # -owide 详细信息，通用参数建议想要更详细的信息都添加用用看
 kubectl get pod -owide

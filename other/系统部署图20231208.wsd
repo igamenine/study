@@ -1,0 +1,107 @@
+@startuml
+actor ops as "公司"
+actor User as "客户"
+agent Front as "前置机"
+cloud Internet as "互联网"
+cloud Intranet as "内网"
+cloud DataIntranet as "数据网"
+cloud HuaweiCloud as "华为私有云" {
+  node Server[
+    虚拟机
+    ====
+    ga-transform1
+    ----
+    ga-registry
+    ----
+    ga-k8s1/VIP
+    ----
+    ga-k8s2
+    ----
+    ga-k8s3
+    ----
+    ga-k8s4
+    ----
+    ga-k8s5
+    ----
+    ga-k8s6
+    ----
+    ga-k8s7
+    ----
+    ga-k8s8
+    ----
+    ga-k8s9
+  ]
+  component Kubernetes[
+    应用程序
+    ====
+    mySQL
+    ----
+    redis
+    ----
+    codis
+    ====
+    nfs
+    ====
+    zookeeper
+    ----
+    Consul
+    ====
+    Pod(gdios&jwsp...)
+    ----
+    kube-controller
+    ....
+    kube-apiserver
+    ....
+    kube-scheduler
+    ....
+    etcd
+    ....
+    kube-proxy
+    ----
+    ...
+  ]
+}
+boundary Gateway[
+  网闸
+]
+cloud FusionInsight as "华为FusionInsight" {
+  queue Kafka {
+  queue kafka[
+    dmp_gid_ids
+    ---
+    dmp_gid_lbs
+    ---
+    dmp_gid_applist
+    ---
+    ...
+  ]
+}
+folder HDFS {
+  folder DMP[
+    dmp_gid_ids
+    ---
+    dmp_gid_lbs
+    ---
+    dmp_gid_applist
+    ---
+    ...
+  ]
+}
+  frame Flink[
+    Flink
+  ]
+  frame Yarn[
+    Yarn
+  ]
+}
+ops -> Internet
+Internet -> Front
+Front -> Gateway
+Gateway -> Intranet
+Intranet --> Server
+Server -> Kubernetes
+HuaweiCloud --> DataIntranet
+DataIntranet --> FusionInsight
+DataIntranet --> kafka
+kafka -> User
+@enduml
