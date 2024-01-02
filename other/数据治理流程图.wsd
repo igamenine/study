@@ -2,14 +2,14 @@
 start
 :搭建原始数据结构;
 note right
-（1）建立四码基础的原始维度表，暂称**ods_dmp_gid_ids**；
-（2）建立APP列表基础的原始事实表，暂称**ods_dmp_gid_applist**。
+（1）建立四码基础的原始维度表，暂称**ods_dg_ids**；
+（2）建立APP列表基础的原始事实表，暂称**ods_dg_applist**。
 end note
 :抽取原始数据;
 :搭建标准数据结构;
 note right
-（1）**ods_dmp_gid_ids**的标准数据暂称**dwd_dmp_gid_ids**；
-（2）**ods_dmp_gid_applist**的标准数据暂称**dwd_dmp_gid_applist**。
+（1）**ods_dg_ids**的标准数据暂称**dwd_dg_ids**；
+（2）**ods_dg_applist**的标准数据暂称**dwd_dg_applist**。
 end note
 :治理出标准数据;
 if (是否保留冗余数据？) then (yes)
@@ -17,15 +17,15 @@ else (no)
 :治理出冗余数据;
 note left
 按照gid：
-对**dwd_dmp_gid_applist**与**dwd_dmp_gid_ids**进行差集（minus）操作，
+对**dwd_dg_applist**与**dwd_dg_ids**进行差集（minus）操作，
 结果仅保留gid。
-将得到的gid列表覆写（overwrite）进**dws_dmp_gid_applist**。
+将得到的gid列表覆写（overwrite）进**dws_dg_applist**。
 （这里默认差集会自动去重）
 end note
 :删除冗余数据;
 note left
-按照**dws_dmp_gid_applist**对**dwd_dmp_gid_applist**进行数据删除操作。
-（这里是为了删除**dwd_dmp_gid_ids**中不存在的四码数据，
+按照**dws_dg_applist**对**dwd_dg_applist**进行数据删除操作。
+（这里是为了删除**dwd_dg_ids**中不存在的四码数据，
 当gt生成四码数据与APP列表数据的时间不一致时会出现）
 end note
 endif
@@ -33,44 +33,44 @@ repeat
 :抽取原始数据;
 :治理出临时标准数据;
 note left
-（1）**ods_dmp_gid_ids**标准临时数据表暂称**dwd_dmp_gid_ids_new**；
-（2）**ods_dmp_gid_applist**标准临时数据表暂称**dwd_dmp_gid_applist_new**。
+（1）**ods_dg_ids**标准临时数据表暂称**dwd_dg_ids_new**；
+（2）**ods_dg_applist**标准临时数据表暂称**dwd_dg_applist_new**。
 end note
 :治理出历史标准数据;
 note left
 按照gid
-对**dwd_dmp_gid_ids**与**dwd_dmp_gid_ids_new**进行差集（minus）操作。
-将得到的数据覆写（overwrite）进**dwd_dmp_gid_ids**。
+对**dwd_dg_ids**与**dwd_dg_ids_new**进行差集（minus）操作。
+将得到的数据覆写（overwrite）进**dwd_dg_ids**。
 end note
 :抽取临时标准数据;
 note left
-将**dwd_dmp_gid_ids_new**写入**dwd_dmp_gid_ids**。
+将**dwd_dg_ids_new**写入**dwd_dg_ids**。
 end note
 if(是否有事实表？) then (yes)
 :治理出历史标准数据;
 note left
 按照gid
-对**dwd_dmp_gid_applist**与**dwd_dmp_gid_applist_new**进行差集（minus）操作。
-将得到的数据覆写（overwrite）进**dwd_dmp_gid_applist**。
+对**dwd_dg_applist**与**dwd_dg_applist_new**进行差集（minus）操作。
+将得到的数据覆写（overwrite）进**dwd_dg_applist**。
 end note
 :抽取临时标准数据;
 note left
-将**dwd_dmp_gid_applist_new**写入**dwd_dmp_gid_applist**。
+将**dwd_dg_applist_new**写入**dwd_dg_applist**。
 end note
 if (是否保留冗余数据？) then (yes)
 else (no)
 :治理出冗余数据;
 note left
 按照gid：
-对**dwd_dmp_gid_applist**与**dwd_dmp_gid_ids**进行差集（minus）操作，
+对**dwd_dg_applist**与**dwd_dg_ids**进行差集（minus）操作，
 结果仅保留gid。
-将得到的gid列表覆写（overwrite）进**dws_dmp_gid_applist**。
+将得到的gid列表覆写（overwrite）进**dws_dg_applist**。
 （这里默认差集会自动去重）
 end note
 :删除冗余数据;
 note left
-按照**dws_dmp_gid_applist**对**dwd_dmp_gid_applist**进行数据删除操作。
-（这里是为了删除**dwd_dmp_gid_ids**中不存在的四码数据，
+按照**dws_dg_applist**对**dwd_dg_applist**进行数据删除操作。
+（这里是为了删除**dwd_dg_ids**中不存在的四码数据，
 当gt生成四码数据与APP列表数据的时间不一致时会出现）
 end note
 endif

@@ -9,27 +9,27 @@ cloud HuaweiCloud as "华为私有云" {
   node Server[
     虚拟机
     ====
-    ga-transform1
+    transform1
     ----
-    ga-registry
+    registry
     ----
-    ga-k8s1/VIP
+    k8s1/VIP
     ----
-    ga-k8s2
+    k8s2
     ----
-    ga-k8s3
+    k8s3
     ----
-    ga-k8s4
+    k8s4
     ----
-    ga-k8s5
+    k8s5
     ----
-    ga-k8s6
+    k8s6
     ----
-    ga-k8s7
+    k8s7
     ----
-    ga-k8s8
+    k8s8
     ----
-    ga-k8s9
+    k8s9
   ]
   component Kubernetes[
     应用程序
@@ -67,22 +67,22 @@ boundary Gateway[
 cloud FusionInsight as "华为FusionInsight" {
   queue Kafka {
   queue kafka[
-    dmp_gid_ids
+    dg_ids
     ---
-    dmp_gid_lbs
+    dg_lbs
     ---
-    dmp_gid_applist
+    dg_applist
     ---
     ...
   ]
 }
 folder HDFS {
   folder DMP[
-    dmp_gid_ids
+    dg_ids
     ---
-    dmp_gid_lbs
+    dg_lbs
     ---
-    dmp_gid_applist
+    dg_applist
     ---
     ...
   ]
