@@ -1,101 +1,50 @@
-├── Linux
-│   ├── Linux重装系统.sh
-│   ├── Linux守护进程方法.sh
-│   ├── MD5码检验.sh
-│   ├── Make install安装的软件卸载方法.sh
-│   ├── chkconfig 和 systemctl 区别.xlsx
-│   ├── find查找文件.sh
-│   ├── polkit内存占用临时解决命令.sh
-│   ├── ps aux 状态列释义.sh
-│   ├── rpm查询或安装本地安装包.sh
-│   ├── scp远程复制文件.sh
-│   ├── sh与bash区别.txt
-│   ├── sh和shell的区别.txt
-│   ├── ssh超时时间延长.sh
-│   ├── tar打包文件.sh
-│   ├── telnet查看端口是否允许访问.sh
-│   ├── vim文本常用命令.sh
-│   ├── 用su切换用户的区别.sh
-│   ├── 查看CPU情况.sh
-│   ├── 查看linux版本.sh
-│   ├── 删除openJDK版本.sh
-│   ├── 修改ssh端口.sh
-│   ├── 更改vsfrp端口.sh
-│   ├── 切割文件.sh
-│   ├── 查看邮件.sh
-│   ├── 超时命令.sh
-│   ├── 查看系统IP.sh
-│   ├── 定时任务crontab.sh
-│   ├── 关闭防火墙.sh
-│   ├── 压缩与解压.sh
-│   ├── 修改系统时间.sh
-│   ├── 循环脚本示例.sh
-│   ├── 批量执行脚本.sh
-│   ├── 机器互信方法.sh
-│   ├── 查看内存情况.sh
-│   ├── 查看硬盘读写.sh
-│   ├── 系统日志路径.txt
-│   ├── 截取日志前后1000行.sh
-│   ├── 修改系统网络IP.sh
-│   ├── 使用光盘作为yum软件安装源.sh
-│   ├── 创建带参数脚本.sh
-│   ├── 批量修改文件名.sh
-│   ├── 硬连接与软连接.sh
-│   ├── 自定义开机程序.sh
-│   ├── 获取前一天日期.sh
-│   ├── 批量替换文件内容.sh
-│   ├── 查看端口占用情况.sh
-│   ├── 查看系统开机时间.sh
-│   ├── 管理服务启动停止.sh
-│   ├── 修改主机名与配置ssh通过主机名进行远程登录.sh
-│   ├── 显示脚本的运行过程.sh
-│   ├── 参数列表过长解决方案.sh
-│   ├── 查看当前目录完整路径.sh
-│   ├── 复制目录至另外一个目录.sh
-│   ├── 截取指定行数范围的内容.sh
-│   └── 添加或者删除防火墙端口.sh
-├── Sql
-│   ├── count的区别.txt
-│   ├── substr截取函数.sql
-│   ├── where1等于1的作用.java
-│   ├── 关于in和exists性能比较.sql
-│   ├── 备份表.sql
-│   ├── 绝对值.sql
-│   ├── 表损坏Incorrect file format解决方案.sql
-│   ├── 修改视图.sql
-│   ├── 创建函数.sql
-│   ├── 创建索引.sql
-│   ├── 修改表结构.sql
-│   ├── 查看表结构.sql
-│   ├── 计算时间差.sql
-│   ├── 什么是约束.txt
-│   ├── 执行本地源sql文件.sql
-│   ├── 创建存储过程.sql
-│   ├── 创建自增字段.sql
-│   ├── 循环执行语句.sql
-│   ├── 查看建表语句.sql
-│   ├── 转换字段类型.sql
-│   ├── 顺序判断语句.sql
-│   ├── 查找字符位置locate.sql
-│   ├── 主流数据库介绍.docx
-│   ├── 命令连接数据库.sh
-│   ├── 主动锁表与解锁.sql
-│   ├── 关联更新及删除.sql
-│   ├── 创建与删除用户.sql
-│   ├── 授权与撤销权限.sql
-│   ├── 查看数据库进程.sql
-│   ├── 判断为空则赋值0.sql
-│   ├── 临时记录执行日志.sql
-│   ├── 查询所有表数据量.sql
-│   ├── 根据日期判断星期.sql
-│   ├── 表创建或更新时间.sql
-│   ├── 判断文本是不是数字.sql
-│   ├── 字符或者浮点数截取.sql
-│   ├── 日期格式转换及利用.sql
-│   ├── 清除空格或其他字符.sql
-│   ├── 用命令将数据导出为csv.sql
-│   ├── 判断文本是否包含字幕.sql
-│   ├── 字符串大小写转化函数.sql
-│   ├── 死锁产生的四大必要条件.txt
-│   ├── 确定特定字段中是否有中文.sql
-│   └── 表记录字段换行符回车符处理.sql
+./docker/docker安装mysql.sh
+./docker/docker安装python.sh
+./docker/docker安装hive.sh
+./docker/docker安装Prometheus.zip
+./docker/Kubenetes/helm_mysql_values.yaml
+./docker/Kubenetes/kubernetes.yaml
+./docker/Kubenetes/云原生.txt
+./docker/Kubenetes/Kubernetes学习笔记.sh
+./docker/Kubenetes/Kubernetes基础命令.sh
+./docker/docker安装mssqlserver.sh
+./docker/dockerfile
+./docker/全局限制容器日志空间.sh
+./docker/docker安装redis.sh
+./docker/删除停止的容器.sh
+./docker/证书已过期或尚未有效.sh
+./docker/docker安装Oracle_11g.sh
+./docker/容器与pod的区别.txt
+./docker/Containerd.sh
+./docker/docker-compose.yml
+./docker/docker基础命令.sh
+./docker/docker学习笔记.sh
+./docker/docker安装Prometheus/grafana/7月28日作业配图1-node_exporter.png
+./docker/docker安装Prometheus/grafana/oracledb_rev1.json
+./docker/docker安装Prometheus/grafana/7月28日作业配图3-oracledb_exporter.png
+./docker/docker安装Prometheus/grafana/mysql-panorama_rev1.json
+./docker/docker安装Prometheus/grafana/7月28日作业配图2-mysqld_exporter.png
+./docker/docker安装Prometheus/grafana/node-manager-aliyun_rev1.json
+./docker/docker安装Prometheus/rules/node_down.yml
+./docker/docker安装Prometheus/rules/prometheus_rules.yml
+./docker/docker安装Prometheus/rules/mysql_rules.yml
+./docker/docker安装Prometheus/rules/node_rules.yml
+./docker/docker安装Prometheus/rules/prometheus.yml
+./docker/docker安装Prometheus/docker-compose.yml
+./docker/docker安装Prometheus/alertmanager.yml
+./docker/docker安装Prometheus/alert.tmpl
+./docker/docker安装Prometheus/prometheus.yml
+./docker/docker安装Prometheus/docker安装Prometheus.sh
+./docker/安装docker.sh
+./docker/测试pushgateway.sh
+./Sql/Hadoop/hadoop版本区别.txt
+./Sql/Hadoop/yarn-default.xml
+./Sql/Hadoop/yarn-site.xml
+./Sql/Hadoop/core-default.xml
+./Sql/Hadoop/hdfs-site.xml
+./Sql/Hadoop/mapred-default.xml
+./Sql/Hadoop/core-site.xml
+./Sql/Hadoop/hdfs-default.xml
+./Sql/Hadoop/hadoop基础命令.sh
+./Sql/Hadoop/Hadoop学习笔记.sh
+./Sql/Hadoop/mapred-site.xml

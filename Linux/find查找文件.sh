@@ -8,6 +8,8 @@ find path [-option] [-exec/-ok]
 # -size n : 文件大小 是 n 单位，b/k/M/G常用大小计量，+号表示计量以上。
 # -type c : 文件类型是 c 的文件，f普通文件，d目录。
 # -cmin n : 在过去 n 分钟内被修改过
+# -path [path] -prune -o : 忽略目录，注意目录名最后不要有/号
+find . -path "./.git" -prune -o -type f -mtime -90
 
 # 在某些版本的linux下，通过find查找当前目录下所有后缀名jpg的文件，命令为
 find ./ -iname *.jpg
