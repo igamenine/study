@@ -1,4 +1,4 @@
-、docker安装mysql.sh
+最新技术成果整理包含：docker安装mysql.sh
 、docker安装python.sh
 、docker安装hive.sh
 、docker安装Prometheus.zip
