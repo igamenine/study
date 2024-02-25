@@ -152,6 +152,8 @@ docker tag [image:version] [registry_url]/[image:version]
 # 推送镜像至私有仓库
 docker push [registry_url]/[image:version]
 
+# -f 强制删除镜像
+docker rmi -f 976be1615c8d
 
 # docker-compose
 # 一次性启动多个容器（配合执行目录下docker-compose.yml使用）

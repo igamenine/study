@@ -134,3 +134,5 @@ spec:
 kind: PodSecurityPolicy
 spec:
   privileged: false
+
+容器和镜像是有关联关系的，如果要删除镜像首先要保证系统上没有使用该镜像创建的容器，所以要先停止、删除容器，最后再删除镜像。

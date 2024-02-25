@@ -10,9 +10,11 @@ WORKDIR /app
 COPY . .
 # 镜像初始化预执行命令，符合镜像系统语法即可
 RUN pip3 install -r requirements.txt
-# 容器初始化执行命令
+# 容器初始化执行命令，如果有多个CMD只会执行最后一个
 CMD python3 app.py
 # cmd ["python3", "app.py"] #有两种写法，看自己习惯
+# 如果有多条启动时命令可以使用ENTRYPOINT
+# ENTRYPOINT echo 1
 # 可挂载卷，在dockerfile中定义了这个路径才可以在启动时定义挂载内容
 VOLUME /app
 # VOLUME ["/app", "/home/app"] #有两种写法，看自己习惯
