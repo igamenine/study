@@ -122,7 +122,7 @@ kubectl delete all -all -n=[namespace_name]
 # 删除所有资源
 kubectl delete all -all
 kubectl delete all -A
-# 根据yaml应用/更新资源，如果资源不存在则会创建
+# 根据yaml应用/更新资源，如果资源不存在则会创建 -f的作用是告诉apply使用哪个配置文件
 kubectl apply -f [yaml_name]
 # 根据yaml删除资源
 kubectl delete -f [yaml_name]
@@ -151,6 +151,8 @@ kubectl edit cm [configmap_name]
 # 查看secret内容
 # 如果secret被环境变量使用，secret修改后需要重启pod手动更新配置
 kubectl describe secret/[pod_name]
+# 查看副本集日志
+kubectl edit deployment -n devops-tools jenkins
 # 查看临时卷
 kubectl get ev
 # 查看持久卷
@@ -160,7 +162,7 @@ kubectl get pvc
 # 查看存储类
 kubectl get sc
 # 将本地端口的连接转发给容器 port主机端口 target-port容器端口 local_ip当主机有多个外网IP时指定IP
-kubectl port-forward pods/[pod_name] [local_ip] [port]:[target-port]
+kubectl port-forward pods/[pod_name] --address [local_ip] [port]:[target-port]
 # 查看Ingress，kubenetes的nginx
 kubectl get ingress
 # 查看ingress配置路由地址/域名
@@ -217,3 +219,7 @@ helm install cluster -f helm_mysql_values.yaml bitnami/mysql
 # -f/-values 使用YAML文件覆盖默认配置，可以指定多次，优先使用最后边的文件。
 # --set 通过命令行的方式对指定项进行覆盖。
 # 如果同时使用两种方式，则--set中的值会被合并到-f中，但是--set中的值优先级更高。
+# 将API暴露给公网（测试用）推荐使用端口转发port-forward
+kubectl proxy --port=7080 --address='192.168.0.107' --accept-hosts='^.*' &
+# 查看容器日志空间占用
+for i in `find /var/lib/docker -name *-json.log`;do du -sh $i;done

@@ -50,7 +50,7 @@ GATEWAY=192.168.20.1
 DNS1=114.114.114.114
 DNS2=8.8.8.8
 
-# 内网成功配置代码参考
+# 内网成功配置代码参考（注意：如果要ping通互联网网站必须添加DNS的配置，否则实验ping无法连通！）
 TYPE="Ethernet"
 BOOTPROTO=static
 DEFROUTE=yes

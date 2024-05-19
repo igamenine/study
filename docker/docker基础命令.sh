@@ -1,5 +1,9 @@
 # 安装docker
-yum install -y docker
+yum install -y yum-utils
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+# 彻底删除docker
+sudo yum remove docker  docker-common docker-selinux docker-engine
 # 启动/关闭docker
 service docker start/stop/status
 # 打包项目至镜像 -t tag/标签 第一次会很慢，因为要下载build依赖。如果不写版本则为latest
@@ -233,3 +237,5 @@ docker-compose exec redis /bin/bash
 # 文件夹：不管是宿主机还是容器内修改、新增、删除文件，都会相互同步
 # 来源：https://blog.csdn.net/wang_jing_jing/article/details/122437083
 
+# 查看容器日志空间占用
+for i in `find /var/lib/docker -name *-json.log`;do du -sh $i;done
