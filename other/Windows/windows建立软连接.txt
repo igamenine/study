@@ -1,0 +1,4 @@
+cmd /c mklink /j "C:\sourcedir "D:\targetdir"
+
+如果要为文件建立软连接则删除/j
+参考https://blog.csdn.net/qq_22823581/article/details/134823686
